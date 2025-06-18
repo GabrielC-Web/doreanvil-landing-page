@@ -1,6 +1,6 @@
 import { AnvilIcon, ArrowRight } from "lucide-react";
 
-export default function HeroSection() {
+export default function HeroSection(props: { text: any }) {
   return (
     <section id="home" className="bg-white py-20 md:py-28">
       <div className="container mx-auto px-6 text-center">
@@ -8,20 +8,19 @@ export default function HeroSection() {
           <AnvilIcon className="w-12 h-12 md:w-16 md:h-16 text-white" />
         </div>
         <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-2">
-          Crafting Digital Experiences That Drive Results
+          {props.text.title}
         </h1>
         <p className="text-lg md:text-xl text-gray-600 font-medium mb-4">
-          A Portfolio by Gabriel Carreño
+          {props.text.subtitle}
         </p>
         <p className="max-w-3xl mx-auto text-gray-600 leading-relaxed mb-8">
-          I build high-performance, scalable, and user-friendly web and mobile
-          applications that solve real-world problems and delight users.
+          {props.text.description}
         </p>
         <a
           href="#contact"
           className="inline-flex items-center bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300 shadow-lg text-lg"
         >
-          Let's Build Together <ArrowRight className="ml-2" size={20} />
+          {props.text.ctaButton} <ArrowRight className="ml-2" size={20} />
         </a>
       </div>
     </section>

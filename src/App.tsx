@@ -22,7 +22,16 @@ export const content: any = {
 export default function App() {
   const [language, setLanguage] = useState("en"); // 'en' or 'es'
 
-  const text = content[language];
+  const text: {
+    brand: any;
+    header: any;
+    hero: any;
+    showcase: any;
+    services: any;
+    benefits: any;
+    experience: any;
+    contact: any;
+  } = content[language];
 
   console.log(text);
 
@@ -37,7 +46,7 @@ export default function App() {
 
       <main className="pt-20">
         {/* Hero Section */}
-        <HeroSection></HeroSection>
+        <HeroSection text={text.hero}></HeroSection>
 
         {/* Client (Projects) Showcase Section */}
         <ProjectsSection></ProjectsSection>
