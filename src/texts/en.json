@@ -1,0 +1,84 @@
+{
+  "brand": {
+    "name": "Doreanvil"
+  },
+  "header": {
+    "navLinks": [
+      { "href": "#home", "label": "Home" },
+      { "href": "#services", "label": "Services" },
+      { "href": "#benefits", "label": "Why Me?" },
+      { "href": "#experience", "label": "Experience" },
+      { "href": "#contact", "label": "Contact" }
+    ]
+  },
+  "hero": {
+    "title": "Crafting Digital Experiences That Drive Results",
+    "subtitle": "A Portfolio by Gabriel Carreño",
+    "description": "I build high-performance, scalable, and user-friendly web and mobile applications that solve real-world problems and delight users.",
+    "ctaButton": "Let's Build Together"
+  },
+  "showcase": {
+    "title": "Solutions trusted by leading financial institutions",
+    "clients": [
+      "Major Bank ONE",
+      "Top Finance Group",
+      "Leading Bank TWO",
+      "National Banking Co."
+    ]
+  },
+  "services": {
+    "title": "What I Offer",
+    "subtitle": "From concept to deployment, I provide end-to-end development services.",
+    "list": [
+      {
+        "title": "Custom Frontend Development",
+        "description": "I specialize in building dynamic, responsive, and scalable web applications using modern frameworks like <strong>Angular</strong> and <strong>React</strong>. I transform complex requirements into intuitive and beautiful user interfaces."
+      },
+      {
+        "title": "Multi-Platform Mobile Apps",
+        "description": "Using <strong>Flutter</strong>, I develop high-performance mobile applications for both Android and iOS from a single codebase. This approach saves time and ensures a consistent user experience across all devices."
+      },
+      {
+        "title": "Code Modernization & Optimization",
+        "description": "I can refactor and modernize existing codebases to improve performance, reduce technical debt, and make them easier to maintain. I also partner with backend teams to optimize API responses for faster load times."
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Why Work With Me?",
+    "subtitle": "I deliver tangible results, not just code.",
+    "list": [
+      {
+        "title": "Scalable & High-Performance",
+        "description": "Building robust applications capable of handling high traffic, like payment gateways with over 20,000 daily transactions."
+      },
+      {
+        "title": "Efficient & Modern Code",
+        "description": "Leveraging reusable component libraries and modern architecture to cut down on maintenance time and ensure consistency."
+      },
+      {
+        "title": "User-Centric & Reliable",
+        "description": "Collaborating closely with UI/UX teams to create intuitive interfaces and reliable systems trusted by leading banks."
+      }
+    ]
+  },
+  "experience": {
+    "title": "My Professional Journey",
+    "job": {
+      "title": "Frontend Developer",
+      "company": "Soluciones financieras chinchin",
+      "period": "2022 – Present",
+      "achievements": [
+        "Played a key role in a payment gateway processing over <strong>20,000 transactions daily</strong>.",
+        "Developed 80% of the frontend for a user onboarding system used by <strong>4 leading Venezuelan banks</strong>.",
+        "Engineered a comprehensive Angular library with over <strong>50 reusable components</strong>.",
+        "Modernized code architecture, cutting monthly maintenance by <strong>50 hours</strong>."
+      ]
+    }
+  },
+  "contact": {
+    "title": "Ready to build something amazing?",
+    "description": "Let's connect! I'm ready to help you achieve your goals. Reach out for a consultation or just to say hello.",
+    "footer": "© {year} Doreanvil. Built by Gabriel Carreño. All rights reserved."
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "brand": {
+    "name": "Doreanvil"
+  },
+  "header": {
+    "navLinks": [
+      { "href": "#home", "label": "Inicio" },
+      { "href": "#services", "label": "Servicios" },
+      { "href": "#benefits", "label": "¿Por qué yo?" },
+      { "href": "#experience", "label": "Experiencia" },
+      { "href": "#contact", "label": "Contacto" }
+    ]
+  },
+  "hero": {
+    "title": "Creando Experiencias Digitales que Impulsan Resultados",
+    "subtitle": "Un Portafolio por Gabriel Carreño",
+    "description": "Construyo aplicaciones web y móviles de alto rendimiento, escalables y fáciles de usar que resuelven problemas del mundo real y deleitan a los usuarios.",
+    "ctaButton": "Construyamos Juntos"
+  },
+  "showcase": {
+    "title": "Soluciones confiables para instituciones financieras líderes",
+    "clients": [
+      "Banco Principal UNO",
+      "Grupo Financiero Principal",
+      "Banco Líder DOS",
+      "Compañía Bancaria Nacional"
+    ]
+  },
+  "services": {
+    "title": "¿Qué Ofrezco?",
+    "subtitle": "Desde el concepto hasta el despliegue, ofrezco servicios de desarrollo de extremo a extremo.",
+    "list": [
+      {
+        "title": "Desarrollo Frontend a Medida",
+        "description": "Me especializo en construir aplicaciones web dinámicas, responsivas y escalables usando frameworks modernos como <strong>Angular</strong> y <strong>React</strong>. Transformo requisitos complejos en interfaces de usuario intuitivas y atractivas."
+      },
+      {
+        "title": "Aplicaciones Móviles Multiplataforma",
+        "description": "Usando <strong>Flutter</strong>, desarrollo aplicaciones móviles de alto rendimiento para Android e iOS desde una única base de código. Este enfoque ahorra tiempo y garantiza una experiencia de usuario consistente en todos los dispositivos."
+      },
+      {
+        "title": "Modernización y Optimización de Código",
+        "description": "Puedo refactorizar y modernizar bases de código existentes para mejorar el rendimiento, reducir la deuda técnica y facilitar su mantenimiento. También colaboro con equipos de backend para optimizar las respuestas de las API y lograr tiempos de carga más rápidos."
+      }
+    ]
+  },
+  "benefits": {
+    "title": "¿Por Qué Trabajar Conmigo?",
+    "subtitle": "Entrego resultados tangibles, no solo código.",
+    "list": [
+      {
+        "title": "Escalable y de Alto Rendimiento",
+        "description": "Construyendo aplicaciones robustas capaces de manejar alto tráfico, como pasarelas de pago con más de 20,000 transacciones diarias."
+      },
+      {
+        "title": "Código Eficiente y Moderno",
+        "description": "Aprovechando librerías de componentes reutilizables y arquitectura moderna para reducir el tiempo de mantenimiento y garantizar la consistencia."
+      },
+      {
+        "title": "Centrado en el Usuario y Confiable",
+        "description": "Colaborando estrechamente con equipos de UI/UX para crear interfaces intuitivas y sistemas confiables utilizados por bancos líderes."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Mi Trayectoria Profesional",
+    "job": {
+      "title": "Desarrollador Frontend",
+      "company": "Soluciones financieras chinchin",
+      "period": "2022 – Actualidad",
+      "achievements": [
+        "Jugué un papel clave en una pasarela de pagos que procesa más de <strong>20,000 transacciones diarias</strong>.",
+        "Desarrollé el 80% del frontend para un sistema de onboarding de usuarios utilizado por <strong>4 bancos líderes en Venezuela</strong>.",
+        "Diseñé una librería de componentes completa en Angular con más de <strong>50 componentes reutilizables</strong>.",
+        "Modernicé la arquitectura del código, reduciendo el mantenimiento mensual en <strong>50 horas</strong>."
+      ]
+    }
+  },
+  "contact": {
+    "title": "¿Listo para construir algo increíble?",
+    "description": "¡Conectemos! Estoy listo para ayudarte a alcanzar tus metas. Contáctame para una consulta o simplemente para saludar.",
+    "footer": "© {year} Doreanvil. Creado por Gabriel Carreño. Todos los derechos reservados."
+  }
+}
