@@ -36,7 +36,7 @@ export default function App() {
   console.log(text);
 
   return (
-    <div className="bg-gray-50 text-gray-800 font-sans antialiased">
+    <div className="dark bg-gray-50 dark:bg-black text-gray-800 font-sans antialiased">
       {/* Header */}
       <Header
         onLanguagueSwitch={() => setLanguage(language == "es" ? "en" : "es")}
