@@ -10,7 +10,7 @@ export default function ServicesSection() {
             From concept to deployment, I provide end-to-end development
             services.
           </p>
-          <div className="w-20 h-1 bg-blue-600 mx-auto mt-4 rounded"></div>
+          <div className="w-20 h-1 bg-orange-700 mx-auto mt-4 rounded"></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Service 1 */}

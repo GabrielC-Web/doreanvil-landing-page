@@ -8,12 +8,12 @@ export default function ExperienceSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             My Professional Journey
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto mt-4 rounded"></div>
+          <div className="w-20 h-1 bg-orange-700 mx-auto mt-4 rounded"></div>
         </div>
         <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8">
           <div className="flex items-start">
             <div className="flex-shrink-0">
-              <Briefcase className="w-10 h-10 text-blue-600" />
+              <Briefcase className="w-10 h-10 text-orange-700" />
             </div>
             <div className="ml-6">
               <h3 className="text-2xl font-bold text-gray-900">
