@@ -41,18 +41,18 @@ export default function Header(props: {
   ];
 
   return (
-    <header className="shadow-md fixed w-full z-20 top-0">
+    <header className="shadow-md fixed bg-black w-full z-30 top-0">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <a href="#home" className="flex items-center space-x-2">
           <AnvilIcon className="h-8 w-8 text-orange-700" />
-          <span className="text-2xl font-bold text-gray-800">Doreanvil</span>
+          <span className="text-2xl font-bold text-white">Doreanvil</span>
         </a>
         <nav className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-gray-600 hover:text-orange-700 transition duration-300 font-medium"
+              className="text-white hover:text-orange-700 transition duration-300 font-medium"
             >
               {link.label}
             </a>
@@ -62,21 +62,21 @@ export default function Header(props: {
         <div className="ml-8 hidden md:flex items-center space-x-2">
           <button
             onClick={props.onLanguagueSwitch}
-            className={`px-3 py-1 text-sm font-bold rounded-md transition ${
-              props.language === "en"
-                ? "bg-orange-700 text-white"
-                : "bg-gray-200 text-gray-700"
-            }`}
+            className={
+              props.language == "en"
+                ? "themed-button-selected"
+                : "themed-button"
+            }
           >
             EN
           </button>
           <button
             onClick={props.onLanguagueSwitch}
-            className={`px-3 py-1 text-sm font-bold rounded-md transition ${
-              props.language === "es"
-                ? "bg-orange-700 text-white"
-                : "bg-gray-200 text-gray-700"
-            }`}
+            className={
+              props.language == "es"
+                ? "themed-button-selected"
+                : "themed-button"
+            }
           >
             ES
           </button>
