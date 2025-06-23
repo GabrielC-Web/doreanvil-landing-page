@@ -23,47 +23,29 @@ export default function ProjectsSection() {
   );
 
   return (
-    // <section id="projects" className="py-12 bg-gray-100 projects-container">
-    //   <div className="w-full mx-auto px-6 text-center">
-    //     <h3 className="text-sm font-bold uppercase text-gray-500 tracking-widest mb-12">
-    //       Solutions trusted by leading financial institutions
-    //     </h3>
+    <section ref={galleryContainerRef} className="py-12  projects-container">
+      <div className="">
+        {/* <h3 className="text-sm font-bold uppercase text-gray-500 tracking-widest mb-12">
+          Solutions trusted by leading financial institutions
+        </h3> */}
 
-    //     <motion.div
-    //       className="w-full flex items-center gap-3 horizontal-slider-wrapper"
-    //       style={{ x }}
-    //     >
-    //       <div className="box bg-violet-800"></div>
-    //       <div className="box bg-yellow-400"></div>
-    //       <div className="box bg-blue-700"></div>
-    //       <div className="box bg-pink-500"></div>
-    //     </motion.div>
-    //   </div>
-    // </section>
-    <section ref={galleryContainerRef} className="img-group-container">
-      <div>
-        <motion.ul className="img-group" style={{ x }}>
-          <li className="img-container">
-            <img src="/photos/cityscape/1.jpg" />
-            <h3>#001</h3>
-          </li>
-          <li className="img-container">
-            <img src="/photos/cityscape/2.jpg" />
-            <h3>#002</h3>
-          </li>
-          <li className="img-container">
-            <img src="/photos/cityscape/3.jpg" />
-            <h3>#003</h3>
-          </li>
-          <li className="img-container">
-            <img src="/photos/cityscape/4.jpg" />
-            <h3>#004</h3>
-          </li>
-          <li className="img-container">
-            <img src="/photos/cityscape/5.jpg" />
-            <h3>#005</h3>
-          </li>
-        </motion.ul>
+        <motion.div
+          className="w-full flex items-center gap-3 horizontal-slider-group"
+          style={{ x }}
+        >
+          <div className="box ">
+            <div className="w-[400px] h-[300px] bg-violet-800"></div>
+          </div>
+          <div className="box">
+            <div className="w-[400px] h-[300px] bg-yellow-400"></div>
+          </div>
+          <div className="box">
+            <div className="w-[400px] h-[300px] bg-blue-700"></div>
+          </div>
+          <div className="box">
+            <div className="w-[400px] h-[300px] bg-pink-500"></div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

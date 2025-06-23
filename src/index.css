@@ -115,23 +115,23 @@
 
 /* Projects section */
 
-.img-group-container {
+.projects-container {
   height: 500vh;
   position: relative;
 }
 
-.img-group-container > div {
+.projects-container > div {
   position: sticky;
   top: 0;
   overflow: hidden;
   height: 100vh;
 }
 
-.img-group {
+.horizontal-slider-group {
   display: flex;
 }
 
-.img-container {
+.box {
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -150,7 +150,7 @@
   margin: 0;
 }
 
-.img-container h3 {
+.box h3 {
   margin: 0;
   font-size: 50px;
   font-weight: 700;
@@ -161,7 +161,7 @@
   display: inline-block;
 }
 
-.img-container img {
+.box img {
   width: 300px;
   height: 400px;
 }
