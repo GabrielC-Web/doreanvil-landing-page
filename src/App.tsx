@@ -33,10 +33,8 @@ export default function App() {
     contact: any;
   } = content[language];
 
-  console.log(text);
-
   return (
-    <div className="dark bg-gray-50 dark:bg-black text-gray-800 font-sans antialiased">
+    <div className="dark bg-gray-50 dark:bg-black text-gray-800 font-sans antialiased px-3">
       {/* Header */}
       <Header
         onLanguagueSwitch={() => setLanguage(language == "es" ? "en" : "es")}
