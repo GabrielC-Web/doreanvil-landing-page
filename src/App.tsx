@@ -50,7 +50,7 @@ export default function App() {
         <ServicesSection text={text.services}></ServicesSection>
 
         {/* Client (Projects) Showcase Section */}
-        <ProjectsSection></ProjectsSection>
+        <ProjectsSection text={text.showcase}></ProjectsSection>
 
         {/* Benefits Section */}
         <BenefitsSection></BenefitsSection>

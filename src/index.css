@@ -14,7 +14,11 @@ h2 {
 }
 
 p {
-  @apply text-2xl text-white leading-8;
+  @apply text-2xl text-white leading-8 flex flex-wrap;
+}
+
+.h2-container {
+  @apply flex w-full justify-center flex-wrap gap-3 mb-3;
 }
 
 /* Hero section */
@@ -190,11 +194,18 @@ p {
 
 /* Services */
 
-@keyframes slide-in-animation {
+.opacity-animation {
+  animation: opacity cubic-bezier(0.1, -0.6, 0.2, 0) 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timeline: view(block 50% 0%);
+}
+
+@keyframes opacity {
   from {
-    top: -50px;
+    opacity: 0;
   }
   to {
-    top: 0;
+    opacity: 1;
   }
 }

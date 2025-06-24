@@ -1,7 +1,34 @@
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import {
+  motion,
+  useAnimation,
+  useInView,
+  useScroll,
+  useTransform,
+} from "framer-motion";
+import { useEffect, useRef } from "react";
 
-export default function ProjectsSection() {
+export default function ProjectsSection(props: { text: any }) {
+  //? Title animation
+
+  //* Title
+  const text: any = props.text.title.split(" ");
+
+  //* Title animation
+  const controls = useAnimation();
+  const ref = useRef(null);
+  const inView = useInView(ref);
+
+  useEffect(() => {
+    if (inView) {
+      const timeout: any = setTimeout(() => {
+        controls.start({ opacity: 1 });
+        clearTimeout(timeout);
+      }, 500);
+    }
+  }, [controls, inView]);
+
+  //? Projects animation
+
   const galleryContainerRef = useRef(null);
 
   // Use useScroll to track scroll progress within the target element
@@ -25,10 +52,27 @@ export default function ProjectsSection() {
   return (
     <section ref={galleryContainerRef} className="py-12  projects-container">
       <div className="">
-        <h3 className="text-sm font-bold uppercase text-gray-500 tracking-widest mb-12">
-          Creations I’ve made before…
-        </h3>
+        <div className="h2-container">
+          {/* Title */}
+          {text.map((el: string, i: number) => (
+            <motion.h2
+              whileInView="visible"
+              ref={ref}
+              animate={controls}
+              viewport={{ once: true }}
+              initial={{ opacity: 0 }}
+              transition={{
+                duration: 0.25,
+                delay: i / 10,
+              }}
+              key={i}
+            >
+              {el}{" "}
+            </motion.h2>
+          ))}
+        </div>
 
+        {/* Projects */}
         <motion.div
           className="w-full flex items-center gap-3 horizontal-slider-group"
           style={{ x }}

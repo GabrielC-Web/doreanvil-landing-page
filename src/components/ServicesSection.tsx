@@ -2,8 +2,10 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 
 export default function ServicesSection(props: { text: any }) {
+  //* Title
   const text: any = props.text.title.split(" ");
 
+  //* Title animation
   const controls = useAnimation();
   const ref = useRef(null);
   const inView = useInView(ref);
@@ -20,9 +22,9 @@ export default function ServicesSection(props: { text: any }) {
   return (
     <section id="services" className="py-20">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <div className="flex w-full gap-3">
-            {/* <h2>{props.text.title}</h2> */}
+        <div className="mb-16">
+          <div className="h2-container">
+            {/* Title */}
             {text.map((el: string, i: number) => (
               <motion.h2
                 whileInView="visible"
@@ -40,7 +42,9 @@ export default function ServicesSection(props: { text: any }) {
               </motion.h2>
             ))}
           </div>
-          <p className="text-lg text-gray-600 mt-2">{props.text.subtitle}</p>
+          <p className="text-lg text-gray-600 mt-2 opacity-animation">
+            {props.text.subtitle}
+          </p>
         </div>
       </div>
     </section>
