@@ -42,9 +42,23 @@ export default function ServicesSection(props: { text: any }) {
               </motion.h2>
             ))}
           </div>
-          <p className="text-lg text-gray-600 mt-2 opacity-animation">
-            {props.text.subtitle}
-          </p>
+
+          {/* Subtitle */}
+          <div className="text-center w-full">
+            <motion.p
+              whileInView="visible"
+              ref={ref}
+              animate={controls}
+              viewport={{ once: true }}
+              initial={{ opacity: 0 }}
+              transition={{
+                duration: 0.25,
+                delay: text.length / 10,
+              }}
+            >
+              {props.text.subtitle}
+            </motion.p>
+          </div>
         </div>
       </div>
     </section>
