@@ -129,69 +129,6 @@ p {
   }
 }
 
-/* Projects section */
-
-.projects-container {
-  height: 500vh;
-  position: relative;
-}
-
-.projects-container > div {
-  position: sticky;
-  top: 0;
-  overflow: hidden;
-  height: 100vh;
-}
-
-.horizontal-slider-group {
-  display: flex;
-}
-
-.box {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  flex: 0 0 auto;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#gallery header h2 {
-  font-size: 56px;
-  font-weight: 700;
-  letter-spacing: -3px;
-  line-height: 1.2;
-  text-align: center;
-  margin: 0;
-}
-
-.box h3 {
-  margin: 0;
-  font-size: 50px;
-  font-weight: 700;
-  letter-spacing: -3px;
-  line-height: 1.2;
-  position: relative;
-  bottom: 30px;
-  display: inline-block;
-}
-
-.box img {
-  width: 300px;
-  height: 400px;
-}
-
-.progress {
-  position: fixed;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background: #9911ff;
-  bottom: 50px;
-  transform: scaleX(0);
-}
-
 /* Services */
 
 .opacity-animation {

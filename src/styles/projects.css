@@ -1,0 +1,37 @@
+/* Projects section */
+
+.projects-container {
+  height: 500svh;
+  position: relative;
+}
+
+.projects-container > div {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  height: 100svh;
+}
+
+.horizontal-slider-group {
+  display: flex;
+}
+
+.box {
+  display: flex;
+  width: 100svw;
+  height: 100svh;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.progress {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #9911ff;
+  bottom: 50px;
+  transform: scaleX(0);
+}
