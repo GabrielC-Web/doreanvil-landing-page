@@ -1,4 +1,4 @@
-import { AnvilIcon, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import AnvilAnimation from "./AnvilAnimation";
 
 export default function HeroSection(props: { text: any }) {
