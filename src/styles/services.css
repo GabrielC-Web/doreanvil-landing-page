@@ -1,0 +1,17 @@
+@import "tailwindcss";
+.skill-box {
+  @apply flex flex-col items-center gap-3 p-4 border-2 border-transparent cursor-pointer
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 2px solid transparent;
+  cursor: pointer; */;
+}
+
+.skill-box:hover,
+.skill-box:active,
+.skill-box:focus {
+  @apply border-orange-700;
+}

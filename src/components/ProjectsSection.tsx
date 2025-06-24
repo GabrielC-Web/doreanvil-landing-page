@@ -1,11 +1,7 @@
-import {
-  motion,
-  useAnimation,
-  useInView,
-  useScroll,
-  useTransform,
-} from "framer-motion";
+import { motion, useAnimation, useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { useInView } from "react-intersection-observer";
+import { AnimatedChar } from "./AnimatedChar";
 
 export default function ProjectsSection(props: { text: any }) {
   //? Title animation
@@ -15,18 +11,16 @@ export default function ProjectsSection(props: { text: any }) {
 
   //* Title animation
   const controls = useAnimation();
-  const ref = useRef(null);
-  const inView = useInView(ref);
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    delay: 100,
+  });
 
   useEffect(() => {
     if (inView) {
-      const timeout: any = setTimeout(() => {
-        controls.start({ opacity: 1 });
-        clearTimeout(timeout);
-      }, 500);
+      controls.start({ opacity: 1 });
     }
-  }, [controls, inView]);
-
+  }, [controls, inView, props.text]);
   //? Projects animation
 
   const galleryContainerRef = useRef(null);
@@ -50,25 +44,14 @@ export default function ProjectsSection(props: { text: any }) {
   );
 
   return (
-    <section ref={galleryContainerRef} className="py-12  projects-container">
+    <section ref={galleryContainerRef} className="py-12 projects-container">
       <div className="">
         <div className="h2-container">
           {/* Title */}
           {text.map((el: string, i: number) => (
-            <motion.h2
-              whileInView="visible"
-              ref={ref}
-              animate={controls}
-              viewport={{ once: true }}
-              initial={{ opacity: 0 }}
-              transition={{
-                duration: 0.25,
-                delay: i / 10,
-              }}
-              key={i}
-            >
-              {el}{" "}
-            </motion.h2>
+            <AnimatedChar key={i} delay={i / 10}>
+              {el}
+            </AnimatedChar>
           ))}
         </div>
 

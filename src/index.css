@@ -14,11 +14,11 @@ h2 {
 }
 
 p {
-  @apply text-2xl text-white leading-8 flex flex-wrap;
+  @apply text-2xl text-white leading-8 text-center;
 }
 
 .h2-container {
-  @apply flex w-full justify-center flex-wrap gap-3 mb-3;
+  @apply flex w-full justify-center flex-wrap gap-3 mb-12;
 }
 
 /* Hero section */

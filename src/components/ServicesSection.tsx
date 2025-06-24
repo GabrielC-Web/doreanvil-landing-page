@@ -1,50 +1,70 @@
-import { motion, useAnimation, useInView } from "framer-motion";
-import { useEffect, useRef } from "react";
+import angularIcon from "../assets/angular-icon-1.svg";
+import bootstrapIcon from "../assets/bootstrap-5-1.svg";
+import flutterIcon from "../assets/flutter-logo.svg";
+import javascriptIcon from "../assets/javascript-1.svg";
+import kotlinIcon from "../assets/kotlin-2.svg";
+import reactIcon from "../assets/react-2.svg";
+import tailwindIcon from "../assets/tailwind-css-2.svg";
+import typescriptIcon from "../assets/typescript.svg";
+import "../styles/services.css";
+import { AnimatedChar } from "./AnimatedChar";
 
 export default function ServicesSection(props: { text: any }) {
   //* Title
   const text: any = props.text.title.split(" ");
 
-  //* Title animation
-  const controls = useAnimation();
-  const ref = useRef(null);
-  const inView = useInView(ref);
+  // //? Skills
 
-  useEffect(() => {
-    if (inView) {
-      const timeout: any = setTimeout(() => {
-        controls.start({ opacity: 1 });
-        clearTimeout(timeout);
-      }, 500);
-    }
-  }, [controls, inView]);
+  const skills: { name: string; image: string }[] = [
+    {
+      name: "Angular",
+      image: angularIcon,
+    },
+    {
+      name: "React",
+      image: reactIcon,
+    },
+    {
+      name: "Flutter",
+      image: flutterIcon,
+    },
+    {
+      name: "Kotlin",
+      image: kotlinIcon,
+    },
+    {
+      name: "Tailwind",
+      image: tailwindIcon,
+    },
+    {
+      name: "Bootstrap",
+      image: bootstrapIcon,
+    },
+    {
+      name: "Typescript",
+      image: typescriptIcon,
+    },
+    {
+      name: "Javascript",
+      image: javascriptIcon,
+    },
+  ];
 
   return (
-    <section id="services" className="py-20">
-      <div className="container mx-auto px-6">
+    <section id="services" className="h-fit min-h-svh">
+      <div className="container mx-auto h-fit flex flex-col items-center justify-evenly px-6">
         <div className="mb-16">
           <div className="h2-container">
             {/* Title */}
             {text.map((el: string, i: number) => (
-              <motion.h2
-                whileInView="visible"
-                ref={ref}
-                animate={controls}
-                viewport={{ once: true }}
-                initial={{ opacity: 0 }}
-                transition={{
-                  duration: 0.25,
-                  delay: i / 10,
-                }}
-                key={i}
-              >
-                {el}{" "}
-              </motion.h2>
+              <AnimatedChar key={i} delay={i / 10}>
+                {el}
+              </AnimatedChar>
             ))}
           </div>
 
           {/* Subtitle */}
-          <div className="text-center w-full">
+          {/* <div className="text-center w-full">
             <motion.p
               whileInView="visible"
               ref={ref}
@@ -58,7 +78,17 @@ export default function ServicesSection(props: { text: any }) {
             >
               {props.text.subtitle}
             </motion.p>
-          </div>
+          </div> */}
+        </div>
+
+        {/* Skills/technologies */}
+        <div className="w-full flex flex-wrap justify-center sm:justify-start gap-6">
+          {skills.map((skill: any, i: number) => (
+            <div key={i} className="skill-box">
+              <img src={skill.image} className="size-20" alt="" />
+              <span className="text-white ">{skill.name}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>

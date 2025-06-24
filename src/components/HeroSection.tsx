@@ -3,10 +3,10 @@ import AnvilAnimation from "./AnvilAnimation";
 
 export default function HeroSection(props: { text: any }) {
   return (
-    <section id="home" className="h-svh">
+    <section id="home" className="h-svh pt-20">
       <div className="container mx-auto h-full flex flex-col justify-center  px-6 text-center relative">
         {/* Title and animation */}
-        <div className="flex flex-col md:flex-row items-center justify-evenly">
+        <div className="flex flex-col lg:flex-row items-center justify-evenly">
           <h1 className=" mb-2 -translate-y-20 whitespace-pre-wrap z-20">
             {props.text.title}
           </h1>
