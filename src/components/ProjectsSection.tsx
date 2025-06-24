@@ -25,9 +25,9 @@ export default function ProjectsSection() {
   return (
     <section ref={galleryContainerRef} className="py-12  projects-container">
       <div className="">
-        {/* <h3 className="text-sm font-bold uppercase text-gray-500 tracking-widest mb-12">
-          Solutions trusted by leading financial institutions
-        </h3> */}
+        <h3 className="text-sm font-bold uppercase text-gray-500 tracking-widest mb-12">
+          Creations I’ve made before…
+        </h3>
 
         <motion.div
           className="w-full flex items-center gap-3 horizontal-slider-group"

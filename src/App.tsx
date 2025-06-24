@@ -46,11 +46,11 @@ export default function App() {
         {/* Hero Section */}
         <HeroSection text={text.hero}></HeroSection>
 
+        {/* Services Section */}
+        <ServicesSection text={text.services}></ServicesSection>
+
         {/* Client (Projects) Showcase Section */}
         <ProjectsSection></ProjectsSection>
-
-        {/* Services Section */}
-        <ServicesSection></ServicesSection>
 
         {/* Benefits Section */}
         <BenefitsSection></BenefitsSection>

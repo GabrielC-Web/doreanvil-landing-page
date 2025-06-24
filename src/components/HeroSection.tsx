@@ -7,7 +7,7 @@ export default function HeroSection(props: { text: any }) {
       <div className="container mx-auto h-full flex flex-col justify-center  px-6 text-center relative">
         {/* Title and animation */}
         <div className="flex flex-col md:flex-row items-center justify-evenly">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-2 -translate-y-20 whitespace-pre-wrap z-20">
+          <h1 className=" mb-2 -translate-y-20 whitespace-pre-wrap z-20">
             {props.text.title}
           </h1>
           {/* Animación */}
