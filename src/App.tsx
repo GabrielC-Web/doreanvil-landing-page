@@ -34,7 +34,7 @@ export default function App() {
   } = content[language];
 
   return (
-    <div className="dark bg-gray-50 dark:bg-black text-gray-800 font-sans antialiased px-3 flex justify-center">
+    <div className="dark bg-gray-50 dark:bg-black text-gray-800 font-sans antialiased px-3">
       {/* Header */}
       <Header
         onLanguagueSwitch={() => setLanguage(language == "es" ? "en" : "es")}
@@ -42,7 +42,7 @@ export default function App() {
         language={language}
       ></Header>
 
-      <main className="pt-20 max-w-5xl">
+      <main className="pt-20">
         {/* Hero Section */}
         <HeroSection text={text.hero}></HeroSection>
 
