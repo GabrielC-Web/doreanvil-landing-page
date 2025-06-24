@@ -1,26 +1,11 @@
-import { motion, useAnimation, useScroll, useTransform } from "framer-motion";
-import { useEffect, useRef } from "react";
-import { useInView } from "react-intersection-observer";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 import { AnimatedChar } from "./AnimatedChar";
 
 export default function ProjectsSection(props: { text: any }) {
-  //? Title animation
-
   //* Title
   const text: any = props.text.title.split(" ");
 
-  //* Title animation
-  const controls = useAnimation();
-  const { ref, inView } = useInView({
-    triggerOnce: false,
-    delay: 100,
-  });
-
-  useEffect(() => {
-    if (inView) {
-      controls.start({ opacity: 1 });
-    }
-  }, [controls, inView, props.text]);
   //? Projects animation
 
   const galleryContainerRef = useRef(null);
