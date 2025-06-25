@@ -1,10 +1,40 @@
+import { useEffect, useState } from "react";
+
 export default function ProjectViewer({ project }: { project: any }) {
-  return (
-    <div className="relative max-w-[90%] xl:max-w-5xl max-h-[80%] xl:max-h-[550px] w-full h-full border-2 border-orange-700">
-      <figure className="flex justify-center h-full w-full relative">
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  return windowSize.width >= 1024 ? (
+    <div className="relative max-w-[85%] xl:max-w-5xl max-h-[80%] xl:max-h-[550px] w-full h-full border-2 border-orange-700">
+      {/* En tamaño de escritorio */}
+      <figure
+        className={
+          "flex justify-center h-full w-full relative " +
+          (windowSize.width < 1024 ? "hidden" : "")
+        }
+      >
         <img
           src={project.img.desktop}
-          className="w-full h-full absolute"
+          className={"w-full h-full absolute "}
           alt=""
         />
         <img
@@ -15,10 +45,30 @@ export default function ProjectViewer({ project }: { project: any }) {
         />
         {/* <img src={project.img.mobile} className="w-" alt="" /> */}
         <div
-          className="w-full z-10 self-end p-3"
-          style={{ marginRight: `332px` }}
+          className="w-full z-10 self-end p-3 backdrop-brightness-50 flex justify-center flex-col items-center"
+          style={{ marginRight: `260px` }}
         >
           <h3 className="text-center">{project.name}</h3>
+          <p className="text-center">{project.description}</p>
+        </div>
+      </figure>
+    </div>
+  ) : (
+    <div className="relative w-full max-w-[21rem] max-h-[80%]">
+      {/* En tamaño pequeño */}
+      <figure
+        className={
+          "flex justify-center h-full w-full relative " +
+          (windowSize.width >= 1024 ? "hidden" : "")
+        }
+      >
+        <img
+          className="h-full w-full border-2 border-orange-700"
+          src={project.img.mobile}
+          alt=""
+        />
+        <div className="w-full absolute z-10 self-end p-3 backdrop-brightness-50 flex justify-center flex-col items-center">
+          <h4 className="text-center">{project.name}</h4>
           <p className="text-center">{project.description}</p>
         </div>
       </figure>
