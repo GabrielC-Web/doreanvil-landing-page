@@ -2,6 +2,9 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { AnimatedChar } from "./AnimatedChar";
 import "../styles/projects.css";
+import ProjectViewer from "./ProjectViewer";
+import destokImg from "../assets/projects/smiley-face-sphere-1920x1080-22767.jpg";
+import mobileImg from "../assets/projects/smiley-face-sphere-720x1280-22767.jpg";
 
 export default function ProjectsSection(props: { text: any }) {
   //* Title
@@ -29,6 +32,50 @@ export default function ProjectsSection(props: { text: any }) {
     [`0svw`, `-${(numberOfItems - 1) * 103}svw`] // Output range (translateX from 0 to -X00vw)
   );
 
+  //? Projects
+
+  const projects: {
+    name: string;
+    description: string;
+    img: {
+      mobile: string;
+      desktop: string;
+    };
+  }[] = [
+    {
+      name: "Clothing ecommerce template",
+      description: "",
+      img: {
+        mobile: mobileImg,
+        desktop: destokImg,
+      },
+    },
+    {
+      name: "Clothing ecommerce template",
+      description: "",
+      img: {
+        mobile: mobileImg,
+        desktop: destokImg,
+      },
+    },
+    {
+      name: "Clothing ecommerce template",
+      description: "",
+      img: {
+        mobile: mobileImg,
+        desktop: destokImg,
+      },
+    },
+    {
+      name: "Clothing ecommerce template",
+      description: "",
+      img: {
+        mobile: mobileImg,
+        desktop: destokImg,
+      },
+    },
+  ];
+
   return (
     <section className="py-12 ">
       <div className="h2-container">
@@ -46,18 +93,23 @@ export default function ProjectsSection(props: { text: any }) {
             className="w-full flex items-center gap-3 horizontal-slider-group"
             style={{ x }}
           >
-            <div className="box">
-              <div className="w-full h-full max-w-2xl max-h-[30rem] bg-violet-800"></div>
+            {projects.map((project, i) => (
+              <div key={i} className="box">
+                <ProjectViewer project={project}></ProjectViewer>
+              </div>
+            ))}
+            {/* <div className="box">
+              <div className="max-w-5/6 max-h-full w-2xl h-[30rem] bg-violet-800"></div>
             </div>
             <div className="box">
-              <div className="w-full h-full max-w-2xl max-h-[30rem] bg-yellow-400"></div>
+              <div className="max-w-5/6 max-h-full w-2xl h-[30rem] bg-yellow-400"></div>
             </div>
             <div className="box">
-              <div className="w-full h-full max-w-2xl max-h-[30rem] bg-blue-700"></div>
+              <div className="max-w-5/6 max-h-full w-2xl h-[30rem] bg-blue-700"></div>
             </div>
             <div className="box">
-              <div className="w-full h-full max-w-2xl max-h-[30rem] bg-pink-500"></div>
-            </div>
+              <div className="max-w-5/6 max-h-full w-2xl h-[30rem] bg-pink-500"></div>
+            </div> */}
           </motion.div>
         </div>
       </div>
