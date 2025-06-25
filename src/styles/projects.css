@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* Projects section */
 
 .projects-container {
@@ -34,4 +36,17 @@
   background: #9911ff;
   bottom: 50px;
   transform: scaleX(0);
+}
+
+/* Detalle de proyecto */
+
+.project-container {
+  border: 2px solid #ca3500;
+  box-shadow: 8px 8px 0px #ca3500;
+}
+
+.project-description {
+  @apply w-full absolute z-10 self-end p-3 flex justify-center flex-col items-center bg-black;
+  /* border: 2px solid #ca3500; */
+  /* box-shadow: 6px 6px 0px #ca3500; */
 }

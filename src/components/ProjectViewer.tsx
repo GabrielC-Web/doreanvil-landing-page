@@ -54,7 +54,7 @@ export default function ProjectViewer({ project }: { project: any }) {
       </figure>
     </div>
   ) : (
-    <div className="relative w-full max-w-[21rem] max-h-[80%]">
+    <div className="relative w-full max-w-[21rem] max-h-[80%] project-container">
       {/* En tamaño pequeño */}
       <figure
         className={
@@ -62,12 +62,8 @@ export default function ProjectViewer({ project }: { project: any }) {
           (windowSize.width >= 1024 ? "hidden" : "")
         }
       >
-        <img
-          className="h-full w-full border-2 border-orange-700"
-          src={project.img.mobile}
-          alt=""
-        />
-        <div className="w-full absolute z-10 self-end p-3 backdrop-brightness-50 flex justify-center flex-col items-center">
+        <img className="h-full w-full" src={project.img.mobile} alt="" />
+        <div className="project-description">
           <h4 className="text-center">{project.name}</h4>
           <p className="text-center">{project.description}</p>
         </div>
