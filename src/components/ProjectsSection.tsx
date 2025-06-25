@@ -44,7 +44,8 @@ export default function ProjectsSection(props: { text: any }) {
   }[] = [
     {
       name: "Clothing ecommerce template",
-      description: "",
+      description:
+        "An engaging and sexy template design for an ecommerce focused on clothing business",
       img: {
         mobile: mobileImg,
         desktop: destokImg,
@@ -52,7 +53,8 @@ export default function ProjectsSection(props: { text: any }) {
     },
     {
       name: "Clothing ecommerce template",
-      description: "",
+      description:
+        "An engaging and sexy template design for an ecommerce focused on clothing business",
       img: {
         mobile: mobileImg,
         desktop: destokImg,
@@ -60,7 +62,8 @@ export default function ProjectsSection(props: { text: any }) {
     },
     {
       name: "Clothing ecommerce template",
-      description: "",
+      description:
+        "An engaging and sexy template design for an ecommerce focused on clothing business",
       img: {
         mobile: mobileImg,
         desktop: destokImg,
@@ -68,7 +71,8 @@ export default function ProjectsSection(props: { text: any }) {
     },
     {
       name: "Clothing ecommerce template",
-      description: "",
+      description:
+        "An engaging and sexy template design for an ecommerce focused on clothing business",
       img: {
         mobile: mobileImg,
         desktop: destokImg,
