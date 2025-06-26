@@ -35,7 +35,7 @@ export default function App() {
   } = content[language];
 
   return (
-    <div className="dark bg-gray-50 dark:bg-black text-gray-800 font-sans antialiased px-3">
+    <div className="dark bg-gray-50 dark:bg-black text-gray-800 antialiased px-3 press-start-2p-regular">
       {/* Header */}
       <Header
         onLanguagueSwitch={() => setLanguage(language == "es" ? "en" : "es")}
