@@ -6,7 +6,7 @@
 }
 
 .press-start-2p-regular {
-  font-family: "Silkscreen", "Press Start 2P", system-ui;
+  font-family: "VT323", "Silkscreen", "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
 }
@@ -28,15 +28,13 @@ h4 {
 }
 
 p {
-  @apply text-[1rem] lg:text-2xl text-white leading-8 text-center;
+  @apply text-white leading-8 text-center;
 }
 
-a {
-  @apply text-[1rem];
-}
-
+p,
+a,
 span {
-  @apply text-[1rem];
+  @apply text-2xl;
 }
 
 .h2-container {
@@ -53,7 +51,7 @@ span {
 }
 
 .themed-button {
-  @apply rounded-none cursor-pointer p-1 text-white text-xs border-2 border-orange-700;
+  @apply rounded-none cursor-pointer p-1 text-white text-sm border-2 border-orange-700;
 }
 
 .themed-button:active {
@@ -61,11 +59,11 @@ span {
 }
 
 .themed-button-selected {
-  @apply rounded-none cursor-pointer p-1 bg-orange-700 text-white text-xs border-2 border-orange-700;
+  @apply rounded-none cursor-pointer p-1 bg-orange-700 text-white text-sm border-2 border-orange-700;
 }
 
 .cta-button {
-  @apply rounded-none cursor-pointer p-3;
+  @apply rounded-none cursor-pointer p-3 text-xl md:text-3xl;
   border: 2px solid #ca3500;
   box-shadow: 6px 6px 0px #ca3500;
 }

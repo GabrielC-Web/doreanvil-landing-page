@@ -43,7 +43,7 @@ export default function App() {
         language={language}
       ></Header>
 
-      <main className="pt-20">
+      <main className="">
         {/* Hero Section */}
         <HeroSection text={text.hero}></HeroSection>
 
