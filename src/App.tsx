@@ -11,6 +11,7 @@ import ServicesSection from "./components/ServicesSection";
 // Import the language files
 import enContent from "./texts/en.json";
 import esContent from "./texts/es.json";
+import TestimonialSection from "./components/TestimonialSection";
 
 // A simple content object to hold both languages
 export const content: any = {
@@ -55,8 +56,11 @@ export default function App() {
         {/* Benefits Section */}
         <BenefitsSection></BenefitsSection>
 
+        {/* Testimonials */}
+        <TestimonialSection></TestimonialSection>
+
         {/* Professional Experience Section */}
-        <ExperienceSection></ExperienceSection>
+        {/* <ExperienceSection></ExperienceSection> */}
 
         {/* Contact Section */}
         <Footer></Footer>

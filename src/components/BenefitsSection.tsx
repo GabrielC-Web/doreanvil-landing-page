@@ -1,6 +1,10 @@
 import { Scaling, Sparkles, ShieldCheck } from "lucide-react";
+import { AnimatedChar } from "./AnimatedChar";
 
 export default function BenefitsSection() {
+  //* Title
+  const text: any = "What benefits do I offer to you?".split(" ");
+
   const benefits = [
     {
       icon: <Scaling className="w-10 h-10 text-orange-700 mb-4" />,
@@ -23,18 +27,23 @@ export default function BenefitsSection() {
   ];
 
   return (
-    <section id="benefits" className="py-20 bg-white">
+    <section id="benefits" className="py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Why Work With Me?
-          </h2>
+          <div className="h2-container">
+            {/* Title */}
+            {text.map((el: string, i: number) => (
+              <AnimatedChar key={i} delay={i / 10}>
+                {el}
+              </AnimatedChar>
+            ))}
+          </div>
           <p className="text-lg text-gray-600 mt-2">
             I deliver tangible results, not just code.
           </p>
           <div className="w-20 h-1 bg-orange-700 mx-auto mt-4 rounded"></div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
             <div
               key={index}
@@ -45,7 +54,7 @@ export default function BenefitsSection() {
               <p className="text-gray-600">{benefit.description}</p>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -1,12 +1,20 @@
 import { Mail, Phone, MapPin } from "lucide-react";
+import { AnimatedChar } from "./AnimatedChar";
 
 export default function Footer() {
+  const title = "This is where you can find me".split(" ");
+
   return (
-    <footer id="contact" className="bg-gray-800 text-white py-12">
+    <footer id="contact" className=" text-white py-12">
       <div className="container mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold mb-4">
-          Ready to build something amazing?
-        </h2>
+        {/* Title */}
+        <div className="h2-container">
+          {title.map((el: string, i: number) => (
+            <AnimatedChar key={i} delay={i / 10}>
+              {el}
+            </AnimatedChar>
+          ))}
+        </div>
         <p className="text-gray-400 mb-8 max-w-lg mx-auto">
           Let's connect! I'm ready to help you achieve your goals. Reach out for
           a consultation or just to say hello.
