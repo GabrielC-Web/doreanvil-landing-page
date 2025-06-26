@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./App.css";
 import BenefitsSection from "./components/BenefitsSection";
-import ExperienceSection from "./components/ExperienceSection";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
@@ -9,9 +8,9 @@ import ProjectsSection from "./components/ProjectsSection";
 import ServicesSection from "./components/ServicesSection";
 
 // Import the language files
+import TestimonialSection from "./components/TestimonialSection";
 import enContent from "./texts/en.json";
 import esContent from "./texts/es.json";
-import TestimonialSection from "./components/TestimonialSection";
 
 // A simple content object to hold both languages
 export const content: any = {

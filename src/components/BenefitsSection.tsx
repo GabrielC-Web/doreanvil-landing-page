@@ -1,30 +1,29 @@
-import { Scaling, Sparkles, ShieldCheck } from "lucide-react";
 import { AnimatedChar } from "./AnimatedChar";
 
 export default function BenefitsSection() {
   //* Title
   const text: any = "What benefits do I offer to you?".split(" ");
 
-  const benefits = [
-    {
-      icon: <Scaling className="w-10 h-10 text-orange-700 mb-4" />,
-      title: "Scalable & High-Performance",
-      description:
-        "Building robust applications capable of handling high traffic, like payment gateways with over 20,000 daily transactions.",
-    },
-    {
-      icon: <Sparkles className="w-10 h-10 text-orange-700 mb-4" />,
-      title: "Efficient & Modern Code",
-      description:
-        "Leveraging reusable component libraries and modern architecture to cut down on maintenance time and ensure consistency.",
-    },
-    {
-      icon: <ShieldCheck className="w-10 h-10 text-orange-700 mb-4" />,
-      title: "User-Centric & Reliable",
-      description:
-        "Collaborating closely with UI/UX teams to create intuitive interfaces and reliable systems trusted by leading banks.",
-    },
-  ];
+  // const benefits = [
+  //   {
+  //     icon: <Scaling className="w-10 h-10 text-orange-700 mb-4" />,
+  //     title: "Scalable & High-Performance",
+  //     description:
+  //       "Building robust applications capable of handling high traffic, like payment gateways with over 20,000 daily transactions.",
+  //   },
+  //   {
+  //     icon: <Sparkles className="w-10 h-10 text-orange-700 mb-4" />,
+  //     title: "Efficient & Modern Code",
+  //     description:
+  //       "Leveraging reusable component libraries and modern architecture to cut down on maintenance time and ensure consistency.",
+  //   },
+  //   {
+  //     icon: <ShieldCheck className="w-10 h-10 text-orange-700 mb-4" />,
+  //     title: "User-Centric & Reliable",
+  //     description:
+  //       "Collaborating closely with UI/UX teams to create intuitive interfaces and reliable systems trusted by leading banks.",
+  //   },
+  // ];
 
   return (
     <section id="benefits" className="h-fit min-h-svh">
