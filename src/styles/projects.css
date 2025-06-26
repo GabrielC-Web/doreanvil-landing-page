@@ -46,7 +46,12 @@
 }
 
 .project-description {
-  @apply w-full absolute z-10 self-end p-3 flex justify-center flex-col items-center bg-black;
-  /* border: 2px solid #ca3500; */
-  /* box-shadow: 6px 6px 0px #ca3500; */
+  @apply w-full absolute lg:relative z-10 self-end p-3 flex justify-center flex-col items-center;
+  background: #000;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
 }

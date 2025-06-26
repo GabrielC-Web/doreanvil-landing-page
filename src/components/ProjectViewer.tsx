@@ -32,22 +32,21 @@ export default function ProjectViewer({ project }: { project: any }) {
           (windowSize.width < 1024 ? "hidden" : "")
         }
       >
+        {/* Imagen grande */}
         <img
           src={project.img.desktop}
           className={"w-full h-full absolute "}
           alt=""
         />
+
+        {/* Imagen pequeña */}
         <img
           className="h-full absolute top-12 left-full -translate-x-5/6 z-20 border-2 border-orange-700"
           style={{ boxShadow: "black -6px -6px 10px" }}
           src={project.img.mobile}
           alt=""
         />
-        {/* <img src={project.img.mobile} className="w-" alt="" /> */}
-        <div
-          className="w-full z-10 self-end p-3 backdrop-brightness-50 flex justify-center flex-col items-center"
-          style={{ marginRight: `260px` }}
-        >
+        <div className="project-description" style={{ marginRight: `260px` }}>
           <h3 className="text-center">{project.name}</h3>
           <p className="text-center">{project.description}</p>
         </div>
@@ -62,7 +61,10 @@ export default function ProjectViewer({ project }: { project: any }) {
           (windowSize.width >= 1024 ? "hidden" : "")
         }
       >
+        {/* Imagen */}
         <img className="h-full w-full" src={project.img.mobile} alt="" />
+
+        {/* Texto */}
         <div className="project-description">
           <h4 className="text-center">{project.name}</h4>
           <p className="text-center">{project.description}</p>
