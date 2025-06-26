@@ -5,7 +5,7 @@ export default function Footer() {
   const title = "This is where you can find me".split(" ");
 
   return (
-    <footer id="contact" className=" text-white py-12">
+    <footer id="contact" className="h-fit min-h-svh text-white">
       <div className="container mx-auto px-6 text-center">
         {/* Title */}
         <div className="h2-container">

@@ -4,7 +4,7 @@ export default function TestimonialSection() {
   const title = "What some people have to say...".split(" ");
 
   return (
-    <div className="py-20">
+    <div className="h-fit min-h-svh">
       <div className="container mx-auto px-6">
         {/* Title */}
         <div className="h2-container">
