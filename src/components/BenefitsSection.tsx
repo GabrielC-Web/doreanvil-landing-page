@@ -9,27 +9,27 @@ export default function BenefitsSection() {
   //* Benefits
   const benefits = [
     {
-      icon: <Scaling className="w-10 h-10 mb-4" />,
+      icon: <Scaling className="w-10 h-10 mb-4 text-[#9a6aff]" />,
       title: "Scalability",
     },
     {
-      icon: <Sparkles className="w-10 h-10 mb-4" />,
+      icon: <Sparkles className="w-10 h-10 mb-4 text-[#FFD166]" />,
       title: "Efficiency",
     },
     {
-      icon: <ShieldCheck className="w-10 h-10 mb-4" />,
+      icon: <ShieldCheck className="w-10 h-10 mb-4 text-[#9a6aff]" />,
       title: "User-friendly",
     },
     {
-      icon: <Scaling className="w-10 h-10 mb-4" />,
+      icon: <Scaling className="w-10 h-10 mb-4 text-[#007ACC]" />,
       title: "Robust solutions",
     },
     {
-      icon: <Sparkles className="w-10 h-10 mb-4" />,
+      icon: <Sparkles className="w-10 h-10 mb-4 text-[#9a6aff]" />,
       title: "Remarkable website",
     },
     {
-      icon: <ShieldCheck className="w-10 h-10 mb-4" />,
+      icon: <ShieldCheck className="w-10 h-10 mb-4 text-[#00BFA6]" />,
       title: "Mantainable code",
     },
   ];
