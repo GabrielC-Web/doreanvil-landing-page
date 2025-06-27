@@ -30,7 +30,11 @@ export default function BenefitsSection() {
     },
     {
       icon: <ShieldCheck className="w-10 h-10 mb-4 text-[#00BFA6]" />,
-      title: "Mantainable code",
+      title: "Mantainable and reusable code",
+    },
+    {
+      icon: <ShieldCheck className="w-10 h-10 mb-4 text-[#00BFA6]" />,
+      title: "Agile development",
     },
   ];
 
