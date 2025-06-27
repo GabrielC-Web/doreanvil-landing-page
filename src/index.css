@@ -63,7 +63,7 @@ span {
 }
 
 .cta-button {
-  @apply rounded-none cursor-pointer p-3 text-xl md:text-3xl;
+  @apply rounded-none cursor-pointer p-3 text-xl md:text-2xl;
   border: 2px solid #ca3500;
   box-shadow: 6px 6px 0px #ca3500;
 }
