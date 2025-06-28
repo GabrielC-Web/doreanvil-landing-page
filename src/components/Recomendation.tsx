@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "../styles/recomendations.css";
 
 export default function Recomendation({
@@ -12,7 +12,37 @@ export default function Recomendation({
     url: string;
   };
 }) {
+  const recomendationText = useRef<HTMLParagraphElement | null>(null);
   const [textExpanded, setTextExpanded] = useState(false);
+
+  const [showExpandButton, setShowExpandButton] = useState(false);
+
+  const handleShowButton = () => {
+    console.log(recomendationText.current?.offsetHeight, recomendation.name);
+
+    if (
+      recomendationText.current &&
+      recomendationText.current?.offsetHeight > 96
+    ) {
+      setShowExpandButton(true);
+    } else {
+      setShowExpandButton(false);
+    }
+  };
+
+  useEffect(() => {
+    handleShowButton();
+
+    const handleResize = () => {
+      handleShowButton();
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  console.log(showExpandButton, recomendation.name);
 
   return (
     <div
@@ -32,26 +62,32 @@ export default function Recomendation({
           <span className="text-white">{recomendation.role}</span>
         </div>
       </div>
-      <p className="!text-left whitespace-pre-line">
+      <p
+        ref={recomendationText}
+        className="!text-left whitespace-pre-line truncate"
+      >
         {recomendation.recomendation}
       </p>
       <a href={recomendation.url}></a>
 
-      <div
-        className={
-          (textExpanded ? "" : "absolute top-full -translate-y-full ") +
-          "w-full flex bg-black"
-        }
-      >
-        <button
-          className=" text-[#007ACC] z-20 text-3xl pb-3 cursor-pointer"
-          onClick={() => {
-            setTextExpanded((expanded) => (expanded = !expanded));
-          }}
+      {/* Botón de ver más */}
+      {showExpandButton ? (
+        <div
+          className={
+            (textExpanded ? "" : " absolute top-full -translate-y-full ") +
+            "w-full flex bg-black z-20"
+          }
         >
-          {textExpanded ? "See less" : "See more..."}
-        </button>
-      </div>
+          <button
+            className="text-[#007ACC] text-3xl pb-3 cursor-pointer "
+            onClick={() => {
+              setTextExpanded((expanded) => (expanded = !expanded));
+            }}
+          >
+            {textExpanded ? "See less" : "See more..."}
+          </button>
+        </div>
+      ) : null}
     </div>
   );
 }
