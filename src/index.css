@@ -1,7 +1,16 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-d-orange: var(--color-orange-700);
+  --color-d-blue: oklch(68.303% 0.09172 239.464);
+  --color-d-blue-500: oklch(80% 0.09172 239.464);
+  --color-d-yellow: #ffd166;
+  --color-d-violet: #9a6aff;
+  --color-d-green: #00bfa6;
+}
+
 * {
-  /* margin: 0;
-  padding: 0; */
   box-sizing: border-box;
 }
 
@@ -64,8 +73,8 @@ span {
 
 .cta-button {
   @apply rounded-none cursor-pointer p-3 text-xl md:text-2xl;
-  border: 2px solid #ca3500;
-  box-shadow: 6px 6px 0px #ca3500;
+  border: 2px solid var(--color-orange-700);
+  box-shadow: 6px 6px 0px var(--color-orange-700);
 }
 
 .cta-button:active {
@@ -173,5 +182,5 @@ span {
 }
 
 .benefit-box:hover {
-  box-shadow: 4px 4px 15px #ca3500;
+  box-shadow: 4px 4px 15px var(--color-orange-700);
 }

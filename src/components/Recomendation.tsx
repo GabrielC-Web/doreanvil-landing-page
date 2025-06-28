@@ -79,7 +79,7 @@ export default function Recomendation({
           }
         >
           <button
-            className="text-[#007ACC] text-3xl pb-3 cursor-pointer "
+            className="text-d-blue hover:text-d-blue-500 text-3xl pb-3 cursor-pointer "
             onClick={() => {
               setTextExpanded((expanded) => (expanded = !expanded));
             }}

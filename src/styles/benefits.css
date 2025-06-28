@@ -5,5 +5,5 @@
 }
 
 .benefit-box:hover {
-  box-shadow: 4px 4px 15px #ca3500;
+  box-shadow: 4px 4px 15px var(--color-orange-700);
 }

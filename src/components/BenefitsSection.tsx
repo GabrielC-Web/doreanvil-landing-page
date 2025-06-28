@@ -13,27 +13,27 @@ export default function BenefitsSection() {
       title: "Scalability",
     },
     {
-      icon: <Sparkles className="w-10 h-10 mb-4 text-[#FFD166]" />,
+      icon: <Sparkles className="w-10 h-10 mb-4 text-d-yellow" />,
       title: "Efficiency",
     },
     {
-      icon: <ShieldCheck className="w-10 h-10 mb-4 text-[#9a6aff]" />,
+      icon: <ShieldCheck className="w-10 h-10 mb-4 text-d-violet" />,
       title: "User-friendly",
     },
     {
-      icon: <Scaling className="w-10 h-10 mb-4 text-[#007ACC]" />,
+      icon: <Scaling className="w-10 h-10 mb-4 text-d-blue" />,
       title: "Robust solutions",
     },
     {
-      icon: <Sparkles className="w-10 h-10 mb-4 text-[#9a6aff]" />,
+      icon: <Sparkles className="w-10 h-10 mb-4 text-d-violet" />,
       title: "Remarkable website",
     },
     {
-      icon: <ShieldCheck className="w-10 h-10 mb-4 text-[#00BFA6]" />,
+      icon: <ShieldCheck className="w-10 h-10 mb-4 text-d-green" />,
       title: "Mantainable and reusable code",
     },
     {
-      icon: <ShieldCheck className="w-10 h-10 mb-4 text-[#00BFA6]" />,
+      icon: <ShieldCheck className="w-10 h-10 mb-4 text-d-green" />,
       title: "Agile development",
     },
   ];
