@@ -39,7 +39,7 @@ export default function BenefitsSection() {
   ];
 
   return (
-    <section id="benefits" className="h-fit min-h-svh pt-20">
+    <section id="benefits" className="h-fit w-full min-h-svh pt-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <div className="h2-container">

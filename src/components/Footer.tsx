@@ -5,8 +5,8 @@ export default function Footer() {
   const title = "This is where you can find me".split(" ");
 
   return (
-    <footer id="contact" className="h-svh text-white pt-20">
-      <div className="container h-full flex flex-col justify-between mx-auto px-6 text-center">
+    <footer id="contact" className="h-svh w-full text-white p-0 mt-20">
+      <div className="container h-full w-full flex flex-col justify-between items-center mx-auto px-6 text-center">
         {/* Title */}
         <div className="h2-container">
           {title.map((el: string, i: number) => (
@@ -36,7 +36,7 @@ export default function Footer() {
             <MapPin className="mr-2" size={20} /> Caracas, Venezuela
           </div>
         </div>
-        <div className="my-10 border-t border-gray-700 pt-6">
+        <div className="my-10 border-t border-gray-700 pt-6 w-full">
           <p className="text-gray-500">
             &copy; {new Date().getFullYear()} Doreanvil. Built by Gabriel
             Carreño. All rights reserved.
