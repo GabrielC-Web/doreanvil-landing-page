@@ -165,3 +165,13 @@ span {
     opacity: 1;
   }
 }
+
+/* Benefits */
+
+.benefit-box {
+  @apply bg-black p-8 rounded-lg shadow-md text-center hover:shadow-xl  transition-transform duration-300 cursor-pointer text-white flex justify-between;
+}
+
+.benefit-box:hover {
+  box-shadow: 4px 4px 15px #ca3500;
+}

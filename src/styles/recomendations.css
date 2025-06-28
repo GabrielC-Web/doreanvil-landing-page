@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.recomendation-box {
+  @apply bg-black p-8 rounded-lg shadow-md text-center transition-transform duration-300 cursor-pointer text-white flex justify-between;
+}
+
+.recomendation-box:hover {
+  box-shadow: 4px 4px 15px #9a6aff;
+}

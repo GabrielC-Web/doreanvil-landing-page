@@ -8,9 +8,9 @@ import ProjectsSection from "./components/ProjectsSection";
 import ServicesSection from "./components/ServicesSection";
 
 // Import the language files
-import TestimonialSection from "./components/TestimonialSection";
 import enContent from "./texts/en.json";
 import esContent from "./texts/es.json";
+import TestimonialSection from "./components/TestimonialSection";
 
 // A simple content object to hold both languages
 export const content: any = {
