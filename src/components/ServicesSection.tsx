@@ -56,7 +56,7 @@ export default function ServicesSection({
   ];
 
   return (
-    <section id="services" className="h-svh min-h-svh">
+    <section id="services" className="min-h-svh pt-20">
       <div className="container mx-auto max-w-5xl h-full flex flex-col items-center justify-evenly px-6">
         <div className="mb-16">
           <div className="h2-container">

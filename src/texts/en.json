@@ -8,6 +8,7 @@
       { "href": "#services", "label": "Services" },
       { "href": "#projects", "label": "Projects" },
       { "href": "#benefits", "label": "Why Me?" },
+      { "href": "#recomendations", "label": "Recomendations" },
       { "href": "#contact", "label": "Contact" }
     ]
   },

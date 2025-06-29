@@ -1,9 +1,4 @@
-import {
-  ArrowBigDown,
-  ChevronDown,
-  ChevronLeft,
-  ChevronRight,
-} from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export default function ProjectViewer({ project }: { project: any }) {

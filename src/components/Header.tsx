@@ -33,16 +33,8 @@ export default function Header(props: {
 }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navLinks = [
-    { href: "#home", label: props.header.navLinks[0].label },
-    { href: "#services", label: props.header.navLinks[1].label },
-    { href: "#projects", label: props.header.navLinks[2].label },
-    { href: "#benefits", label: props.header.navLinks[3].label },
-    { href: "#contact", label: props.header.navLinks[4].label },
-  ];
-
   return (
-    <header className="shadow-md fixed bg-black w-full z-30 top-0 left-0">
+    <header className="shadow-lg fixed bg-black w-full z-30 top-0 left-0">
       <div className="w-full px-3 py-4 flex justify-between items-center">
         {/* Logo */}
         <a href="#home" className="flex items-center space-x-2">
@@ -51,8 +43,8 @@ export default function Header(props: {
         </a>
 
         {/* navbar */}
-        <nav className="hidden md:flex space-x-8">
-          {navLinks.map((link) => (
+        <nav className="hidden lg:flex space-x-8">
+          {props.header.navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
@@ -91,7 +83,7 @@ export default function Header(props: {
           {/* Menu */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden"
+            className="lg:hidden"
           >
             {isMenuOpen ? (
               <X size={24} className="text-white cursor-pointer" />
@@ -103,9 +95,9 @@ export default function Header(props: {
       </div>
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-black w-full">
+        <div className="lg:hidden bg-black w-full">
           <nav className="flex flex-col items-center py-4 border-y-2 border-orange-700 ">
-            {navLinks.map((link) => (
+            {props.header.navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}

@@ -10,7 +10,7 @@ export default function RecomendationsSection({
   const title = recomendations.title.split(" ");
 
   return (
-    <div className="h-fit min-h-svh pt-20">
+    <div id="recomendations" className="h-fit min-h-svh pt-20">
       <div className="container mx-auto px-6">
         {/* Title */}
         <div className="h2-container">
