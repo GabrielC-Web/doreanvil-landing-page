@@ -59,6 +59,6 @@
 }
 
 .expand-button {
-  @apply rotate-90 absolute top-0 right-0 border-l-2 border-orange-700 h-12 p-3;
+  @apply transform rotate-90 absolute top-0 right-0 border-l-2 border-orange-700 h-12 p-3;
   transform: translate(25px, -28px);
 }

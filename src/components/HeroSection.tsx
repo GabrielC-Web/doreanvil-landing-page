@@ -24,9 +24,12 @@ export default function HeroSection({ hero }: { hero: HeroModel }) {
             {props.text.ctaButton} <ArrowRight className="ml-2" size={20} />
           </a> */}
 
-          <button className="inline-flex items-center text-white font-bold py-3 px-8 rounded-lg transition duration-300 shadow-lg text-lg cta-button">
+          <a
+            href="#contact"
+            className="inline-flex items-center text-white font-bold py-3 px-8 rounded-lg transition duration-300 shadow-lg text-lg cta-button"
+          >
             {hero.ctaButton} <ArrowRight className="ml-2" size={20} />
-          </button>
+          </a>
         </div>
       </div>
     </section>
