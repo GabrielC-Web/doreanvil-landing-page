@@ -1,12 +1,14 @@
 import { ServicesModel } from "@/models/texts.model";
-import angularIcon from "../assets/angular-icon-1.svg";
-import bootstrapIcon from "../assets/bootstrap-5-1.svg";
-import flutterIcon from "../assets/flutter-logo.svg";
-import javascriptIcon from "../assets/javascript-1.svg";
-import kotlinIcon from "../assets/kotlin-2.svg";
-import reactIcon from "../assets/react-2.svg";
-import tailwindIcon from "../assets/tailwind-css-2.svg";
-import typescriptIcon from "../assets/typescript.svg";
+import {
+  angularIcon,
+  bootstrapIcon,
+  flutterIcon,
+  javascriptIcon,
+  kotlinIcon,
+  reactIcon,
+  tailwindIcon,
+  typescriptIcon,
+} from "@/assets/icons";
 import "../styles/services.css";
 import { AnimatedChar } from "./AnimatedChar";
 

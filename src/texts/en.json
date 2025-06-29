@@ -61,21 +61,53 @@
       {
         "name": "Clothing ecommerce template",
         "description": "An engaging and sexy template design for an ecommerce focused on clothing business",
+        "skills": [
+          {
+            "name": "Angular"
+          },
+          {
+            "name": "Bootstrap"
+          }
+        ],
         "id": 1
       },
       {
         "name": "Clothing ecommerce template2",
         "description": "An engaging and sexy template design for an ecommerce focused on clothing business",
+        "skills": [
+          {
+            "name": "Angular"
+          },
+          {
+            "name": "Bootstrap"
+          }
+        ],
         "id": 2
       },
       {
         "name": "Clothing ecommerce template3",
         "description": "An engaging and sexy template design for an ecommerce focused on clothing business",
+        "skills": [
+          {
+            "name": "Angular"
+          },
+          {
+            "name": "Bootstrap"
+          }
+        ],
         "id": 3
       },
       {
         "name": "Clothing ecommerce template4",
         "description": "An engaging and sexy template design for an ecommerce focused on clothing business",
+        "skills": [
+          {
+            "name": "Angular"
+          },
+          {
+            "name": "Bootstrap"
+          }
+        ],
         "id": 4
       }
     ]

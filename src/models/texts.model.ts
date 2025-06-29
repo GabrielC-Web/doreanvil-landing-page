@@ -49,6 +49,9 @@ export interface ProjectItemModel {
   name: string;
   description: string;
   id: number;
+  skills: {
+    name: string;
+  };
 }
 
 export interface BenefitsModel {

@@ -41,16 +41,12 @@ h5 {
 }
 
 p {
-  @apply text-white leading-8 text-center;
+  @apply text-white leading-8 text-center text-[1rem] md:text-xl;
 }
 
 a,
 span {
   @apply text-2xl;
-}
-
-p {
-  @apply text-[1rem];
 }
 
 .h2-container {

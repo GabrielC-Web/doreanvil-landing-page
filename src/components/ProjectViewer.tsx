@@ -1,7 +1,55 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
+import angularIcon from "../assets/angular-icon-1.svg";
+import {
+  bootstrapIcon,
+  flutterIcon,
+  javascriptIcon,
+  kotlinIcon,
+  reactIcon,
+  tailwindIcon,
+  typescriptIcon,
+} from "@/assets/icons";
 
 export default function ProjectViewer({ project }: { project: any }) {
+  const skillIcons: {
+    img?: any;
+    name: string;
+  }[] = [
+    {
+      img: angularIcon,
+      name: "Angular",
+    },
+    {
+      name: "React",
+      img: reactIcon,
+    },
+    {
+      name: "Flutter",
+      img: flutterIcon,
+    },
+    {
+      name: "Kotlin",
+      img: kotlinIcon,
+    },
+    {
+      name: "Tailwind",
+      img: tailwindIcon,
+    },
+    {
+      name: "Bootstrap",
+      img: bootstrapIcon,
+    },
+    {
+      name: "TypeScript",
+      img: typescriptIcon,
+    },
+    {
+      name: "JavaScript",
+      img: javascriptIcon,
+    },
+  ];
+
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -48,9 +96,24 @@ export default function ProjectViewer({ project }: { project: any }) {
           src={project.img.mobile}
           alt=""
         />
-        <div className="project-description" style={{ marginRight: `204px` }}>
+
+        {/* Description */}
+        <div className="project-description">
           <h3 className="text-center">{project.name}</h3>
           <p className="text-center">{project.description}</p>
+
+          {/* skills used */}
+          <div className="w-full h-6 flex items-center gap-2 ">
+            {project.skills.map((skill: { name: string }) => (
+              <div className="flex items-center gap-1">
+                <img
+                  src={skillIcons.find((icon) => icon.name == skill.name)?.img}
+                  alt={skill.name}
+                  className="size-6"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </figure>
     </div>
@@ -77,8 +140,25 @@ export default function ProjectViewer({ project }: { project: any }) {
             {/* Opened */}
             {descriptionOpened && (
               <div className="description-opened transition-all duration-300">
-                <h5 className="text-center p-3">{project.name}</h5>
-                <p className="p-3">{project.description}</p>
+                <div className="p-3">
+                  {/* skills used */}
+                  <div className="w-full h-6 flex items-center gap-2 px-3">
+                    {project.skills.map((skill: { name: string }) => (
+                      <div className="flex items-center gap-1">
+                        <img
+                          src={
+                            skillIcons.find((icon) => icon.name == skill.name)
+                              ?.img
+                          }
+                          alt={skill.name}
+                          className="size-6"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                  <h5 className="text-center p-3">{project.name}</h5>
+                  <p className="p-3">{project.description}</p>
+                </div>
                 <a href="" className="text-d-blue">
                   Visit
                 </a>

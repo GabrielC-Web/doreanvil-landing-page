@@ -61,21 +61,53 @@
       {
         "name": "Plantilla de comercio electrónico de ropa",
         "description": "Un diseño de plantilla atractivo y sexy para un comercio electrónico centrado en el negocio de la ropa",
+        "skills": [
+          {
+            "name": "Angular"
+          },
+          {
+            "name": "Bootstrap"
+          }
+        ],
         "id": "1"
       },
       {
         "name": "Plantilla de comercio electrónico de ropa",
         "description": "Un diseño de plantilla atractivo y sexy para un comercio electrónico centrado en el negocio de la ropa",
+        "skills": [
+          {
+            "name": "Angular"
+          },
+          {
+            "name": "Bootstrap"
+          }
+        ],
         "id": "2"
       },
       {
         "name": "Plantilla de comercio electrónico de ropa",
         "description": "Un diseño de plantilla atractivo y sexy para un comercio electrónico centrado en el negocio de la ropa",
+        "skills": [
+          {
+            "name": "Angular"
+          },
+          {
+            "name": "Bootstrap"
+          }
+        ],
         "id": "3"
       },
       {
         "name": "Plantilla de comercio electrónico de ropa",
         "description": "Un diseño de plantilla atractivo y sexy para un comercio electrónico centrado en el negocio de la ropa",
+        "skills": [
+          {
+            "name": "Angular"
+          },
+          {
+            "name": "Bootstrap"
+          }
+        ],
         "id": "4"
       }
     ]
