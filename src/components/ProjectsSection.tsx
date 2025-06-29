@@ -37,7 +37,7 @@ export default function ProjectsSection({
   const x = useTransform(
     scrollYProgress,
     [0, 1], // Input range (scroll progress from 0 to 1)
-    [`0svw`, `-${(numberOfItems - 1) * 104}svw`] // Output range (translateX from 0 to -X00vw)
+    [`0svw`, `-${(numberOfItems - 1) * 108}svw`] // Output range (translateX from 0 to -X00vw)
   );
 
   const projectImages = [
