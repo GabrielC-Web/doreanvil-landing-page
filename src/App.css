@@ -36,14 +36,21 @@ h4 {
   @apply text-xl md:text-xl font-bold text-white leading-14 w-fit;
 }
 
+h5 {
+  @apply text-lg font-bold text-white leading-[18px] w-fit;
+}
+
 p {
   @apply text-white leading-8 text-center;
 }
 
-p,
 a,
 span {
   @apply text-2xl;
+}
+
+p {
+  @apply text-[1rem];
 }
 
 .h2-container {

@@ -40,18 +40,25 @@
 
 /* Detalle de proyecto */
 
-.project-container {
-  border: 2px solid var(--color-orange-700);
-  box-shadow: 8px 8px 0px var(--color-orange-700);
+.project-description {
+  @apply w-full max-w-[500px] border-2 border-orange-700 absolute z-10 left-0 self-end p-3 flex justify-center flex-col items-center;
+  background: rgba(0, 0, 0, 0.9);
+  transform: translate(-50px, 48px);
 }
 
-.project-description {
-  @apply w-full absolute lg:relative z-10 self-end p-3 flex justify-center flex-col items-center;
-  background: #000;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.8) 50%,
-    rgba(0, 0, 0, 0.5) 100%
-  );
+.description {
+  @apply absolute left-12 top-12 w-full h-full z-10 transition-all;
+}
+
+.description-opened {
+  @apply w-full h-full border-2 border-orange-700 bg-black flex flex-col items-center justify-between gap-3;
+}
+
+.description-closed {
+  @apply w-full h-full relative border-b-2 border-r-2 border-orange-700;
+}
+
+.expand-button {
+  @apply rotate-90 absolute top-0 right-0 border-l-2 border-orange-700 h-12 p-3;
+  transform: translate(25px, -28px);
 }
