@@ -96,4 +96,6 @@ export interface ContactModel {
   footer: string;
   mail: string;
   phone: string;
+  linkedin: string;
+  github: string;
 }

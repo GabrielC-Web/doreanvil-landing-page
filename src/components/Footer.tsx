@@ -1,5 +1,5 @@
 import { ContactModel } from "@/models/texts.model";
-import { Mail, Phone } from "lucide-react";
+import { Github, Linkedin, Mail, Phone } from "lucide-react";
 import { AnimatedChar } from "./AnimatedChar";
 
 export default function Footer({ contact }: { contact: ContactModel }) {
@@ -19,19 +19,39 @@ export default function Footer({ contact }: { contact: ContactModel }) {
         <p className="text-gray-400 mb-8 max-w-lg mx-auto">
           {contact.description}
         </p>
-        <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
-          <a
-            href="mailto:gabrieljose.cz21@gmail.com"
-            className="flex items-center text-lg text-d-blue hover:text-d-blue-500 transition duration-300"
-          >
-            <Mail className="mr-2" size={20} /> {contact.mail}
-          </a>
-          <a
-            href="tel:+584120244649"
-            className="flex items-center text-lg text-d-blue hover:text-d-blue-500 transition duration-300"
-          >
-            <Phone className="mr-2" size={20} /> {contact.phone}
-          </a>
+        <div className="w-full max-w-lg flex flex-col gap-3 justify-center items-start">
+          <div className="w-full flex flex-col md:flex-row justify-between gap-3">
+            <a
+              href={contact.linkedin}
+              target="_blank"
+              className="flex items-center text-lg text-d-violet hover:text-d-blue-500 transition duration-300"
+            >
+              <Linkedin className="mr-2" size={20} /> Linkedin
+            </a>
+
+            <a
+              href="tel:+584120244649"
+              className="flex items-center text-lg text-d-violet hover:text-d-blue-500 transition duration-300"
+            >
+              <Phone className="mr-2" size={20} /> {contact.phone}
+            </a>
+          </div>
+
+          <div className="w-full flex flex-col md:flex-row justify-between gap-3">
+            <a
+              href="mailto:gabrieljose.cz21@gmail.com"
+              className="flex items-center text-lg text-d-violet hover:text-d-blue-500 transition duration-300"
+            >
+              <Mail className="mr-2" size={20} /> {contact.mail}
+            </a>
+            <a
+              href={contact.github}
+              target="_blank"
+              className="flex items-center text-lg text-d-violet hover:text-d-blue-500 transition duration-300"
+            >
+              <Github className="mr-2" size={20} /> Github
+            </a>
+          </div>
         </div>
         <div className="my-10 border-t border-gray-700 pt-6 w-full">
           <p className="text-gray-500">
