@@ -5,10 +5,11 @@ import {
   flutterIcon,
   javascriptIcon,
   kotlinIcon,
+  nextjsIcon,
   reactIcon,
   tailwindIcon,
   typescriptIcon,
-} from "@/assets/icons";
+} from "@/assets/icons/icons";
 import "../styles/services.css";
 import { AnimatedChar } from "./AnimatedChar";
 
@@ -30,6 +31,10 @@ export default function ServicesSection({
     {
       name: "React",
       image: reactIcon,
+    },
+    {
+      name: "Next.js",
+      image: nextjsIcon,
     },
     {
       name: "Flutter",

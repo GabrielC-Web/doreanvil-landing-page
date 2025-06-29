@@ -1,15 +1,16 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
-import angularIcon from "../assets/angular-icon-1.svg";
 import {
+  angularIcon,
   bootstrapIcon,
   flutterIcon,
   javascriptIcon,
   kotlinIcon,
+  nextjsIcon,
   reactIcon,
   tailwindIcon,
   typescriptIcon,
-} from "@/assets/icons";
+} from "@/assets/icons/icons";
 
 export default function ProjectViewer({
   project,
@@ -63,6 +64,10 @@ export default function ProjectViewer({
     {
       name: "JavaScript",
       img: javascriptIcon,
+    },
+    {
+      name: "Next.js",
+      img: nextjsIcon,
     },
   ];
 
@@ -118,8 +123,8 @@ export default function ProjectViewer({
           {/* skills used */}
           <div className="w-full h-6 flex justify-between items-center gap-2 ">
             <div className="flex gap-2">
-              {project.skills.map((skill: { name: string }) => (
-                <div className="flex items-center gap-1">
+              {project.skills.map((skill: { name: string }, i) => (
+                <div key={i} className="flex items-center gap-1">
                   <img
                     src={
                       skillIcons.find((icon) => icon.name == skill.name)?.img
@@ -165,8 +170,8 @@ export default function ProjectViewer({
                 <div className="p-3 flex flex-col items-center">
                   {/* skills used */}
                   <div className="w-full h-6 flex items-center gap-2 px-3">
-                    {project.skills.map((skill: { name: string }) => (
-                      <div className="flex items-center gap-1">
+                    {project.skills.map((skill: { name: string }, i) => (
+                      <div key={i} className="flex items-center gap-1">
                         <img
                           src={
                             skillIcons.find((icon) => icon.name == skill.name)

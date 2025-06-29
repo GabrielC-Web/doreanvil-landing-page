@@ -105,10 +105,13 @@
         "description": "Una galería con innumerables imágenes, impulsada por las APIs de Pexels.",
         "skills": [
           {
-            "name": "Angular"
+            "name": "Next.js"
           },
           {
-            "name": "Bootstrap"
+            "name": "React"
+          },
+          {
+            "name": "Tailwind"
           }
         ],
         "id": 4,
