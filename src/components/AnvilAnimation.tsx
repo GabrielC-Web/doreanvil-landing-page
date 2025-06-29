@@ -4,10 +4,14 @@ import flameGif from "../assets/flame-lit.gif";
 export default function AnvilAnimation() {
   return (
     <div className="flex flex-col items-center justify-center size-fit flame-light -translate-y-[20%]">
-      <img src={anvilGif} className="size-80" alt="Fire camp image" />
+      <img
+        src={anvilGif}
+        className="size-60 lg:size-80"
+        alt="Fire camp image"
+      />
       <img
         src={flameGif}
-        className="size-20 absolute -z-10 -translate-y-[70%] translate-x-1.5"
+        className="size-15 lg:size-20 absolute -z-10 -translate-y-[70%] translate-x-1.5"
         alt="Fire camp image"
       />
     </div>
