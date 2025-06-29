@@ -41,7 +41,7 @@ export default function Header(props: {
   ];
 
   return (
-    <header className="shadow-md fixed bg-black w-full z-30 top-0 p-3">
+    <header className="shadow-md fixed bg-black w-full z-30 top-0 left-0 p-3">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <a href="#home" className="flex items-center space-x-2">
           <AnvilIcon className="h-8 w-8 text-orange-700" />
