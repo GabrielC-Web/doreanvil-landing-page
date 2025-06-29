@@ -45,7 +45,7 @@ export default function ProjectViewer({ project }: { project: any }) {
           src={project.img.mobile}
           alt=""
         />
-        <div className="project-description" style={{ marginRight: `260px` }}>
+        <div className="project-description" style={{ marginRight: `210px` }}>
           <h3 className="text-center">{project.name}</h3>
           <p className="text-center">{project.description}</p>
         </div>

@@ -14,8 +14,8 @@
   --color-d-violet: #9a6aff;
   --color-d-green: #00bfa6;
 }
-.press-start-2p-regular {
-  font-family: "VT323", "Silkscreen", "Press Start 2P", system-ui;
+.VT323 {
+  font-family: "VT323";
   font-weight: 400;
   font-style: normal;
 }

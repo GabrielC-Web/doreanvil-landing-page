@@ -3,8 +3,11 @@ import { useRef } from "react";
 import { AnimatedChar } from "./AnimatedChar";
 import "../styles/projects.css";
 import ProjectViewer from "./ProjectViewer";
-import destokImg from "../assets/projects/smiley-face-sphere-1920x1080-22767.jpg";
-import mobileImg from "../assets/projects/smiley-face-sphere-720x1280-22767.jpg";
+import destokImgClothing from "../assets/projects/desktop_clothing_ecommerce.png";
+import mobileImgClothing from "../assets/projects/mobile_clothes_ecommerce.png";
+import desktopImgmakeup from "../assets/projects/desktop_makeup_ecommerce.png";
+import mobileImgmakeup from "../assets/projects/mobile_makeup_ecommerce.png";
+//! Optimize images
 import { ProjectItemModel, ProjectsModel } from "@/models/texts.model";
 
 export default function ProjectsSection({
@@ -40,29 +43,29 @@ export default function ProjectsSection({
   const projectImages = [
     {
       img: {
-        mobile: mobileImg,
-        desktop: destokImg,
+        mobile: mobileImgClothing,
+        desktop: destokImgClothing,
       },
       id: 1,
     },
     {
       img: {
-        mobile: mobileImg,
-        desktop: destokImg,
+        mobile: mobileImgmakeup,
+        desktop: desktopImgmakeup,
       },
       id: 2,
     },
     {
       img: {
-        mobile: mobileImg,
-        desktop: destokImg,
+        mobile: mobileImgClothing,
+        desktop: destokImgClothing,
       },
       id: 3,
     },
     {
       img: {
-        mobile: mobileImg,
-        desktop: destokImg,
+        mobile: mobileImgClothing,
+        desktop: destokImgClothing,
       },
       id: 4,
     },
