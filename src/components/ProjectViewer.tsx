@@ -159,16 +159,16 @@ export default function ProjectViewer({ project }: { project: any }) {
                   <h5 className="text-center p-3">{project.name}</h5>
                   <p className="p-3">{project.description}</p>
                 </div>
-                <a href="" className="text-d-blue">
+                <a href="" className="text-d-violet">
                   Visit
                 </a>
                 <div
-                  className="w-full h-12 flex items-center gap-3 p-3 cursor-pointer text-white"
+                  className="w-full h-12 flex items-center gap-3 p-3 cursor-pointer text-d-blue"
                   onClick={() => {
                     setDescriptionOpened(false);
                   }}
                 >
-                  <ChevronLeft className="text-white hover:translate-x-3"></ChevronLeft>
+                  <ChevronLeft className="hover:translate-x-3"></ChevronLeft>
                   <span>Close</span>
                 </div>
               </div>
@@ -185,9 +185,9 @@ export default function ProjectViewer({ project }: { project: any }) {
                     setDescriptionOpened(true);
                   }}
                 >
-                  <div className="text-white flex items-center gap-3 cursor-pointer">
+                  <div className="text-d-blue flex items-center gap-3 cursor-pointer">
                     <span className="">Open</span>
-                    <ChevronRight className="text-white hover:translate-x-3"></ChevronRight>
+                    <ChevronRight className=" hover:translate-x-3"></ChevronRight>
                   </div>
                 </div>
 
