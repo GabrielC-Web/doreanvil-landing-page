@@ -26,7 +26,7 @@ export default function App() {
     brand: any;
     header: any;
     hero: any;
-    showcase: any;
+    projects: any;
     services: any;
     benefits: any;
     experience: any;
@@ -49,11 +49,11 @@ export default function App() {
         {/* Services Section */}
         <ServicesSection text={text.services}></ServicesSection>
 
-        {/* Client (Projects) Showcase Section */}
-        <ProjectsSection text={text.showcase}></ProjectsSection>
+        {/* Client (Projects) projects Section */}
+        <ProjectsSection text={text.projects}></ProjectsSection>
 
         {/* Benefits Section */}
-        <BenefitsSection></BenefitsSection>
+        <BenefitsSection text={text.benefits}></BenefitsSection>
 
         {/* Testimonials */}
         <TestimonialSection></TestimonialSection>

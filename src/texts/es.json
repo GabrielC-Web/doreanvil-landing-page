@@ -17,7 +17,7 @@
     "description": "Construyo aplicaciones web y móviles de alto rendimiento, escalables y fáciles de usar que resuelven problemas del mundo real y deleitan a los usuarios.",
     "ctaButton": "Construyamos Juntos"
   },
-  "showcase": {
+  "projects": {
     "title": "Soluciones confiables para instituciones financieras líderes",
     "clients": [
       "Banco Principal UNO",
@@ -27,22 +27,7 @@
     ]
   },
   "services": {
-    "title": "¿Qué Ofrezco?",
-    "subtitle": "Desde el concepto hasta el despliegue, ofrezco servicios de desarrollo de extremo a extremo.",
-    "list": [
-      {
-        "title": "Desarrollo Frontend a Medida",
-        "description": "Me especializo en construir aplicaciones web dinámicas, responsivas y escalables usando frameworks modernos como <strong>Angular</strong> y <strong>React</strong>. Transformo requisitos complejos en interfaces de usuario intuitivas y atractivas."
-      },
-      {
-        "title": "Aplicaciones Móviles Multiplataforma",
-        "description": "Usando <strong>Flutter</strong>, desarrollo aplicaciones móviles de alto rendimiento para Android e iOS desde una única base de código. Este enfoque ahorra tiempo y garantiza una experiencia de usuario consistente en todos los dispositivos."
-      },
-      {
-        "title": "Modernización y Optimización de Código",
-        "description": "Puedo refactorizar y modernizar bases de código existentes para mejorar el rendimiento, reducir la deuda técnica y facilitar su mantenimiento. También colaboro con equipos de backend para optimizar las respuestas de las API y lograr tiempos de carga más rápidos."
-      }
-    ]
+    "title": "Con una gran variedad de opciones para ti. . ."
   },
   "benefits": {
     "title": "¿Por Qué Trabajar Conmigo?",

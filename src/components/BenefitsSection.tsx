@@ -2,41 +2,53 @@ import { Scaling, ShieldCheck, Sparkles } from "lucide-react";
 import "../styles/benefits.css";
 import { AnimatedChar } from "./AnimatedChar";
 
-export default function BenefitsSection() {
+export default function BenefitsSection(props: { text: any }) {
   //* Title
-  const text: any = "What benefits do I offer to you?".split(" ");
+  const text: any = props.text.title.split(" ");
 
-  //* Benefits
-  const benefits = [
+  //* The icons
+  const icons: {
+    icon: any;
+    id: number;
+  }[] = [
     {
       icon: <Scaling className="w-10 h-10 mb-4 text-[#9a6aff]" />,
-      title: "Scalability",
+      id: 1,
     },
     {
       icon: <Sparkles className="w-10 h-10 mb-4 text-d-yellow" />,
-      title: "Efficiency",
+      id: 2,
     },
     {
-      icon: <ShieldCheck className="w-10 h-10 mb-4 text-d-violet" />,
-      title: "User-friendly",
+      icon: <Sparkles className="w-10 h-10 mb-4 text-d-yellow" />,
+      id: 3,
     },
     {
-      icon: <Scaling className="w-10 h-10 mb-4 text-d-blue" />,
-      title: "Robust solutions",
+      icon: <Sparkles className="w-10 h-10 mb-4 text-d-yellow" />,
+      id: 4,
     },
     {
-      icon: <Sparkles className="w-10 h-10 mb-4 text-d-violet" />,
-      title: "Remarkable website",
+      icon: <Sparkles className="w-10 h-10 mb-4 text-d-yellow" />,
+      id: 5,
     },
     {
-      icon: <ShieldCheck className="w-10 h-10 mb-4 text-d-green" />,
-      title: "Mantainable and reusable code",
+      icon: <Sparkles className="w-10 h-10 mb-4 text-d-yellow" />,
+      id: 6,
     },
     {
-      icon: <ShieldCheck className="w-10 h-10 mb-4 text-d-green" />,
-      title: "Agile development",
+      icon: <Sparkles className="w-10 h-10 mb-4 text-d-yellow" />,
+      id: 7,
     },
   ];
+
+  //* Creates the benefits array matching the icons with the text
+  const benefits: any[] = props.text.list.map((benefit: any) => {
+    return {
+      title: benefit.title,
+      icon: icons.find((icon) => icon.id == benefit.id)?.icon,
+      id: benefit.id,
+    };
+  });
 
   return (
     <section id="benefits" className="h-fit w-full min-h-svh pt-20">
@@ -57,7 +69,6 @@ export default function BenefitsSection() {
             <div key={index} className="benefit-box">
               {benefit.icon}
               <h3 className="text-xl font-bold mb-2 grow">{benefit.title}</h3>
-              {/* <p className="text-gray-600">{benefit.description}</p> */}
             </div>
           ))}
         </div>

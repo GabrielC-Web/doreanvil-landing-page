@@ -17,48 +17,117 @@
     "description": "I build high-performance, scalable, and user-friendly web and mobile applications that solve real-world problems and delight users.",
     "ctaButton": "Let's make real your ideas"
   },
-  "showcase": {
-    "title": "Creations I’ve made before. . .",
-    "clients": [
-      "Major Bank ONE",
-      "Top Finance Group",
-      "Leading Bank TWO",
-      "National Banking Co."
-    ]
-  },
   "services": {
     "title": "With a wide selection of options for you. . .",
-    "subtitle": "I provide development from concept to deployment, with a wide range of varied technologies like so:",
-    "list": [
+    "services": [
       {
-        "title": "Custom Frontend Development",
-        "description": "I specialize in building dynamic, responsive, and scalable web applications using modern frameworks like <strong>Angular</strong> and <strong>React</strong>. I transform complex requirements into intuitive and beautiful user interfaces."
+        "name": "Angular",
+        "id": "1"
       },
       {
-        "title": "Multi-Platform Mobile Apps",
-        "description": "Using <strong>Flutter</strong>, I develop high-performance mobile applications for both Android and iOS from a single codebase. This approach saves time and ensures a consistent user experience across all devices."
+        "name": "React",
+        "id": "2"
       },
       {
-        "title": "Code Modernization & Optimization",
-        "description": "I can refactor and modernize existing codebases to improve performance, reduce technical debt, and make them easier to maintain. I also partner with backend teams to optimize API responses for faster load times."
+        "name": "Flutter",
+        "id": "3"
+      },
+      {
+        "name": "Kotlin",
+        "id": "4"
+      },
+      {
+        "name": "Tailwind",
+        "id": "5"
+      },
+      {
+        "name": "Bootstrap",
+        "id": "6"
+      },
+      {
+        "name": "TypeScript",
+        "id": "7"
+      },
+      {
+        "name": "JavaScript",
+        "id": "8"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Creations I've made before. . .",
+    "projects": [
+      {
+        "name": "Clothing ecommerce template",
+        "description": "An engaging and sexy template design for an ecommerce focused on clothing business",
+        "id": "1"
+      },
+      {
+        "name": "Clothing ecommerce template",
+        "description": "An engaging and sexy template design for an ecommerce focused on clothing business",
+        "id": "2"
+      },
+      {
+        "name": "Clothing ecommerce template",
+        "description": "An engaging and sexy template design for an ecommerce focused on clothing business",
+        "id": "3"
+      },
+      {
+        "name": "Clothing ecommerce template",
+        "description": "An engaging and sexy template design for an ecommerce focused on clothing business",
+        "id": "4"
       }
     ]
   },
   "benefits": {
-    "title": "Why Work With Me?",
-    "subtitle": "I deliver tangible results, not just code.",
+    "title": "What benefits do I offer to you?",
     "list": [
       {
-        "title": "Scalable & High-Performance",
-        "description": "Building robust applications capable of handling high traffic, like payment gateways with over 20,000 daily transactions."
+        "title": "Scalability",
+        "id": 1
       },
       {
-        "title": "Efficient & Modern Code",
-        "description": "Leveraging reusable component libraries and modern architecture to cut down on maintenance time and ensure consistency."
+        "title": "Efficiency",
+        "id": 2
       },
       {
-        "title": "User-Centric & Reliable",
-        "description": "Collaborating closely with UI/UX teams to create intuitive interfaces and reliable systems trusted by leading banks."
+        "title": "User-friendly",
+        "id": 3
+      },
+      {
+        "title": "Robusts solutions",
+        "id": 4
+      },
+      {
+        "title": "Remarkable website",
+        "id": 5
+      },
+      {
+        "title": "Mantainable and reusable code",
+        "id": 6
+      },
+      {
+        "title": "Agile development",
+        "id": 7
+      }
+    ]
+  },
+  "recomendations": {
+    "title": "What some people have to say. . .",
+    "list": [
+      {
+        "image": "https://media.licdn.com/dms/image/v2/D4E35AQFb9XwG702xcg/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1738011340925?e=1751673600&v=beta&t=-rM0dEDZvdXDxyjDbbmtfQgVCXRJyB-8mx6OaMu2efg",
+        "name": "Angela Ortiz",
+        "role": "Graphic Designer",
+        "recomendation": "Gabriel Carreño, an exceptional Front-end developer with whom I had the privilege of collaborating for two years on the Chinchin project. \n \n Gabriel is an extremely decisive and organized professional, always willing to face challenges and find effective solutions. Your ability to communicate clearly and concisely is an invaluable asset, greatly facilitating collaboration and mutual understanding on complex projects. \n \n His experience and deep knowledge in Front-end development is evident in the quality of his work. I recommend Gabriel without hesitation to any company or team looking for a dedicated, talented professional with great problem-solving skills.",
+        "url": "https://www.linkedin.com/in/angela-ortiz-b43420284/"
+      },
+      {
+        "image": "https://media.licdn.com/dms/image/v2/D4E35AQErEUt5figUCg/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1651713834357?e=1751673600&v=beta&t=ych9teT9KpUbQHeYpbnUDx9DEOUk9U8ceT_u7pJttiM",
+        "name": "Alivier Zapata",
+        "role": "Backend developer",
+        "recomendation": "Gabriel is an excellent front-end developer, quite capable, and I always see first-hand how resourceful and attentive he is when it comes to working and coding.",
+        "url": "https://www.linkedin.com/in/angela-ortiz-b43420284/"
       }
     ]
   },
@@ -77,8 +146,8 @@
     }
   },
   "contact": {
-    "title": "Ready to build something amazing?",
-    "description": "Let's connect! I'm ready to help you achieve your goals. Reach out for a consultation or just to say hello.",
+    "title": "This is where you can find me",
+    "description": "Let's connect! I'm ready to help you achieve your goals. Reach out and start making your apps true.",
     "footer": "© {year} Doreanvil. Built by Gabriel Carreño. All rights reserved."
   }
 }
