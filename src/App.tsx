@@ -10,9 +10,21 @@ import ServicesSection from "./components/ServicesSection";
 // Import the language files
 import enContent from "./texts/en.json";
 import esContent from "./texts/es.json";
-import TestimonialSection from "./components/TestimonialSection";
+import RecomendationsSection from "./components/RecomendationsSection";
+import {
+  BenefitsModel,
+  BrandModel,
+  ContactModel,
+  ExperienceModel,
+  HeaderModel,
+  HeroModel,
+  ProjectsModel,
+  RecomendationsModel,
+  ServicesModel,
+} from "./models/texts.model";
 
 // A simple content object to hold both languages
+// eslint-disable-next-line react-refresh/only-export-components
 export const content: any = {
   en: enContent,
   es: esContent,
@@ -23,14 +35,15 @@ export default function App() {
   const [language, setLanguage] = useState("en"); // 'en' or 'es'
 
   const text: {
-    brand: any;
-    header: any;
-    hero: any;
-    projects: any;
-    services: any;
-    benefits: any;
-    experience: any;
-    contact: any;
+    brand: BrandModel;
+    header: HeaderModel;
+    hero: HeroModel;
+    services: ServicesModel;
+    projects: ProjectsModel;
+    benefits: BenefitsModel;
+    recomendations: RecomendationsModel;
+    experience: ExperienceModel;
+    contact: ContactModel;
   } = content[language];
 
   return (
@@ -38,31 +51,33 @@ export default function App() {
       {/* Header */}
       <Header
         onLanguagueSwitch={() => setLanguage(language == "es" ? "en" : "es")}
-        text={text.header}
+        header={text.header}
         language={language}
       ></Header>
 
       <main className="px-3">
         {/* Hero Section */}
-        <HeroSection text={text.hero}></HeroSection>
+        <HeroSection hero={text.hero}></HeroSection>
 
         {/* Services Section */}
-        <ServicesSection text={text.services}></ServicesSection>
+        <ServicesSection services={text.services}></ServicesSection>
 
         {/* Client (Projects) projects Section */}
-        <ProjectsSection text={text.projects}></ProjectsSection>
+        <ProjectsSection projects={text.projects}></ProjectsSection>
 
         {/* Benefits Section */}
-        <BenefitsSection text={text.benefits}></BenefitsSection>
+        <BenefitsSection benefits={text.benefits}></BenefitsSection>
 
         {/* Testimonials */}
-        <TestimonialSection></TestimonialSection>
+        <RecomendationsSection
+          recomendations={text.recomendations}
+        ></RecomendationsSection>
 
         {/* Professional Experience Section */}
         {/* <ExperienceSection></ExperienceSection> */}
 
         {/* Contact Section */}
-        <Footer></Footer>
+        <Footer contact={text.contact}></Footer>
       </main>
     </div>
   );

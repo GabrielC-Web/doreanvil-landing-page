@@ -1,3 +1,4 @@
+import { ServicesModel } from "@/models/texts.model";
 import angularIcon from "../assets/angular-icon-1.svg";
 import bootstrapIcon from "../assets/bootstrap-5-1.svg";
 import flutterIcon from "../assets/flutter-logo.svg";
@@ -9,9 +10,13 @@ import typescriptIcon from "../assets/typescript.svg";
 import "../styles/services.css";
 import { AnimatedChar } from "./AnimatedChar";
 
-export default function ServicesSection(props: { text: any }) {
+export default function ServicesSection({
+  services,
+}: {
+  services: ServicesModel;
+}) {
   //* Title
-  const text: any = props.text.title.split(" ");
+  const text: any = services.title.split(" ");
 
   // //? Skills
 

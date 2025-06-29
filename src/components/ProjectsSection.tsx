@@ -5,10 +5,15 @@ import "../styles/projects.css";
 import ProjectViewer from "./ProjectViewer";
 import destokImg from "../assets/projects/smiley-face-sphere-1920x1080-22767.jpg";
 import mobileImg from "../assets/projects/smiley-face-sphere-720x1280-22767.jpg";
+import { ProjectItemModel, ProjectsModel } from "@/models/texts.model";
 
-export default function ProjectsSection(props: { text: any }) {
+export default function ProjectsSection({
+  projects,
+}: {
+  projects: ProjectsModel;
+}) {
   //* Title
-  const text: any = props.text.title.split(" ");
+  const text: any = projects.title.split(" ");
 
   //? Projects animation
 
@@ -32,53 +37,50 @@ export default function ProjectsSection(props: { text: any }) {
     [`0svw`, `-${(numberOfItems - 1) * 104}svw`] // Output range (translateX from 0 to -X00vw)
   );
 
-  //? Projects
-
-  const projects: {
-    name: string;
-    description: string;
-    img: {
-      mobile: string;
-      desktop: string;
-    };
-  }[] = [
+  const projectImages = [
     {
-      name: "Clothing ecommerce template",
-      description:
-        "An engaging and sexy template design for an ecommerce focused on clothing business",
       img: {
         mobile: mobileImg,
         desktop: destokImg,
       },
+      id: 1,
     },
     {
-      name: "Clothing ecommerce template",
-      description:
-        "An engaging and sexy template design for an ecommerce focused on clothing business",
       img: {
         mobile: mobileImg,
         desktop: destokImg,
       },
+      id: 2,
     },
     {
-      name: "Clothing ecommerce template",
-      description:
-        "An engaging and sexy template design for an ecommerce focused on clothing business",
       img: {
         mobile: mobileImg,
         desktop: destokImg,
       },
+      id: 3,
     },
     {
-      name: "Clothing ecommerce template",
-      description:
-        "An engaging and sexy template design for an ecommerce focused on clothing business",
       img: {
         mobile: mobileImg,
         desktop: destokImg,
       },
+      id: 4,
     },
   ];
+
+  //? Projects
+
+  //* Creates the benefits array matching the icons with the text
+  const projectsList: any[] = projects.projects.map(
+    (project: ProjectItemModel) => {
+      return {
+        name: project.name,
+        description: project.description,
+        img: projectImages.find((img) => img.id == project.id)?.img,
+        id: project.id,
+      };
+    }
+  );
 
   return (
     <section className="py-12 ">
@@ -97,23 +99,11 @@ export default function ProjectsSection(props: { text: any }) {
             className="w-full flex items-center gap-3 horizontal-slider-group"
             style={{ x }}
           >
-            {projects.map((project, i) => (
+            {projectsList.map((project, i) => (
               <div key={i} className="box">
                 <ProjectViewer project={project}></ProjectViewer>
               </div>
             ))}
-            {/* <div className="box">
-              <div className="max-w-5/6 max-h-full w-2xl h-[30rem] bg-violet-800"></div>
-            </div>
-            <div className="box">
-              <div className="max-w-5/6 max-h-full w-2xl h-[30rem] bg-yellow-400"></div>
-            </div>
-            <div className="box">
-              <div className="max-w-5/6 max-h-full w-2xl h-[30rem] bg-blue-700"></div>
-            </div>
-            <div className="box">
-              <div className="max-w-5/6 max-h-full w-2xl h-[30rem] bg-pink-500"></div>
-            </div> */}
           </motion.div>
         </div>
       </div>

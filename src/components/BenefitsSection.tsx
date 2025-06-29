@@ -1,10 +1,15 @@
-import { Scaling, ShieldCheck, Sparkles } from "lucide-react";
+import { BenefitsModel } from "@/models/texts.model";
+import { Scaling, Sparkles } from "lucide-react";
 import "../styles/benefits.css";
 import { AnimatedChar } from "./AnimatedChar";
 
-export default function BenefitsSection(props: { text: any }) {
+export default function BenefitsSection({
+  benefits,
+}: {
+  benefits: BenefitsModel;
+}) {
   //* Title
-  const text: any = props.text.title.split(" ");
+  const text: any = benefits.title.split(" ");
 
   //* The icons
   const icons: {
@@ -42,7 +47,7 @@ export default function BenefitsSection(props: { text: any }) {
   ];
 
   //* Creates the benefits array matching the icons with the text
-  const benefits: any[] = props.text.list.map((benefit: any) => {
+  const benefitsList: any[] = benefits.list.map((benefit: any) => {
     return {
       title: benefit.title,
       icon: icons.find((icon) => icon.id == benefit.id)?.icon,
@@ -65,7 +70,7 @@ export default function BenefitsSection(props: { text: any }) {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-3">
-          {benefits.map((benefit, index) => (
+          {benefitsList.map((benefit, index) => (
             <div key={index} className="benefit-box">
               {benefit.icon}
               <h3 className="text-xl font-bold mb-2 grow">{benefit.title}</h3>

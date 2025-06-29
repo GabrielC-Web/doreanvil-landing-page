@@ -1,3 +1,4 @@
+import { HeaderModel } from "@/models/texts.model";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -27,17 +28,17 @@ const AnvilIcon = ({ className }: AnvilIconProps) => (
 
 export default function Header(props: {
   onLanguagueSwitch: (e: any) => void;
-  text: any;
+  header: HeaderModel;
   language: string;
 }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "#home", label: props.text.navLinks[0].label },
-    { href: "#services", label: props.text.navLinks[1].label },
-    { href: "#benefits", label: props.text.navLinks[2].label },
-    { href: "#experience", label: props.text.navLinks[3].label },
-    { href: "#contact", label: props.text.navLinks[4].label },
+    { href: "#home", label: props.header.navLinks[0].label },
+    { href: "#services", label: props.header.navLinks[1].label },
+    { href: "#benefits", label: props.header.navLinks[2].label },
+    { href: "#experience", label: props.header.navLinks[3].label },
+    { href: "#contact", label: props.header.navLinks[4].label },
   ];
 
   return (

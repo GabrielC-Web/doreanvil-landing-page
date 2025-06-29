@@ -6,7 +6,6 @@ export default function ProjectViewer({ project }: { project: any }) {
     height: window.innerHeight,
   });
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     const handleResize = () => {
       setWindowSize({
