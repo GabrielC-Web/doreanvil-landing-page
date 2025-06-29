@@ -36,18 +36,21 @@ export default function Header(props: {
   const navLinks = [
     { href: "#home", label: props.header.navLinks[0].label },
     { href: "#services", label: props.header.navLinks[1].label },
-    { href: "#benefits", label: props.header.navLinks[2].label },
-    { href: "#experience", label: props.header.navLinks[3].label },
+    { href: "#projects", label: props.header.navLinks[2].label },
+    { href: "#benefits", label: props.header.navLinks[3].label },
     { href: "#contact", label: props.header.navLinks[4].label },
   ];
 
   return (
     <header className="shadow-md fixed bg-black w-full z-30 top-0 left-0">
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="w-full px-3 py-4 flex justify-between items-center">
+        {/* Logo */}
         <a href="#home" className="flex items-center space-x-2">
           <AnvilIcon className="h-8 w-8 text-orange-700" />
           <span className="font-bold text-white">Doreanvil</span>
         </a>
+
+        {/* navbar */}
         <nav className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
             <a
@@ -59,46 +62,55 @@ export default function Header(props: {
             </a>
           ))}
         </nav>
-        {/* Language Switcher */}
-        <div className="ml-8 hidden md:flex items-center space-x-2">
+
+        <div className="flex gap-3">
+          {/* Language Switcher */}
+          <div className="ml-8 flex items-center space-x-2">
+            <button
+              onClick={props.onLanguagueSwitch}
+              className={
+                props.language == "en"
+                  ? "themed-button-selected"
+                  : "themed-button"
+              }
+            >
+              EN
+            </button>
+            <button
+              onClick={props.onLanguagueSwitch}
+              className={
+                props.language == "es"
+                  ? "themed-button-selected"
+                  : "themed-button"
+              }
+            >
+              ES
+            </button>
+          </div>
+
+          {/* Menu */}
           <button
-            onClick={props.onLanguagueSwitch}
-            className={
-              props.language == "en"
-                ? "themed-button-selected"
-                : "themed-button"
-            }
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden"
           >
-            EN
-          </button>
-          <button
-            onClick={props.onLanguagueSwitch}
-            className={
-              props.language == "es"
-                ? "themed-button-selected"
-                : "themed-button"
-            }
-          >
-            ES
+            {isMenuOpen ? (
+              <X size={24} className="text-white cursor-pointer" />
+            ) : (
+              <Menu size={24} className="text-white cursor-pointer" />
+            )}
           </button>
         </div>
-        <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden"
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
       </div>
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white">
-          <nav className="flex flex-col items-center py-4">
+        <div className="md:hidden bg-black w-full">
+          <nav className="flex flex-col items-center py-4 border-y-2 border-orange-700 ">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="py-2 text-gray-600 hover:text-orange-700 transition duration-300"
+                className="py-2 text-white hover:text-orange-700 transition duration-300"
               >
                 {link.label}
               </a>

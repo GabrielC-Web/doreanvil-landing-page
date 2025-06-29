@@ -56,8 +56,8 @@ export default function ServicesSection({
   ];
 
   return (
-    <section id="services" className="h-fit min-h-svh">
-      <div className="container mx-auto max-w-5xl h-fit flex flex-col items-center justify-evenly px-6">
+    <section id="services" className="h-svh min-h-svh">
+      <div className="container mx-auto max-w-5xl h-full flex flex-col items-center justify-evenly px-6">
         <div className="mb-16">
           <div className="h2-container">
             {/* Title */}

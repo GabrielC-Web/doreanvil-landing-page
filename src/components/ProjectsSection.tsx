@@ -86,7 +86,7 @@ export default function ProjectsSection({
   );
 
   return (
-    <section className="py-12 ">
+    <section id="projects" className="py-12 ">
       <div className="h2-container">
         {/* Title */}
         {text.map((el: string, i: number) => (

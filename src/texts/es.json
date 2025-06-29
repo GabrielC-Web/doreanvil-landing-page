@@ -6,13 +6,13 @@
     "navLinks": [
       { "href": "#home", "label": "Inicio" },
       { "href": "#services", "label": "Servicios" },
-      { "href": "#benefits", "label": "¿Por qué yo?" },
-      { "href": "#experience", "label": "Experiencia" },
+      { "href": "#projects", "label": "Proyectos" },
+      { "href": "#benefits", "label": "Beneficios" },
       { "href": "#contact", "label": "Contacto" }
     ]
   },
   "hero": {
-    "title": "Crearé\ntu sitio web",
+    "title": "Yo crearé\ntu sitio web",
     "subtitle": "Un portafolio de Gabriel Carreño",
     "description": "Construyo aplicaciones web y móviles de alto rendimiento, escalables y fáciles de usar que resuelven problemas del mundo real y deleitan a los usuarios.",
     "ctaButton": "Hagamos realidad tus ideas"
@@ -119,14 +119,14 @@
         "image": "https://media.licdn.com/dms/image/v2/D4E35AQFb9XwG702xcg/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1738011340925?e=1751673600&v=beta&t=-rM0dEDZvdXDxyjDbbmtfQgVCXRJyB-8mx6OaMu2efg",
         "name": "Angela Ortiz",
         "role": "Diseñadora Gráfica",
-        "recomendation": "Gabriel Carreño, un excepcional desarrollador Front-end con quien tuve el privilegio de colaborar durante dos años en el proyecto Chinchin. \n \n Gabriel es un profesional extremadamente decidido y organizado, siempre dispuesto a enfrentar desafíos y encontrar soluciones efectivas. Su capacidad para comunicarse de forma clara y concisa es un activo invaluable, facilitando enormemente la colaboración y el entendimiento mutuo en proyectos complejos. \n \n Su experiencia y profundo conocimiento en el desarrollo Front-end es evidente en la calidad de su trabajo. Recomiendo a Gabriel sin dudarlo a cualquier empresa o equipo que busque un profesional dedicado, talentoso y con grandes habilidades para resolver problemas.",
+        "recomendation": "Gabriel Carreño, un excepcional desarrollador Front-end con quien tuve el privilegio de colaborar durante dos años en el proyecto Chinchin.\n\n Gabriel es un profesional sumamente resolutivo y organizado, siempre dispuesto a enfrentar desafíos y encontrar soluciones efectivas. Su habilidad para comunicarse de manera clara y concisa es un activo invaluable, lo que facilita enormemente la colaboración y el entendimiento mutuo en proyectos complejos.\n\n Su experiencia y profundo conocimiento en el desarrollo Front-end son evidentes en la calidad de su trabajo. Recomiendo a Gabriel sin dudarlo a cualquier empresa o equipo que busque un profesional dedicado, talentoso y con una gran capacidad para resolver problemas.",
         "url": "https://www.linkedin.com/in/angela-ortiz-b43420284/"
       },
       {
         "image": "https://media.licdn.com/dms/image/v2/D4E35AQErEUt5figUCg/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1651713834357?e=1751673600&v=beta&t=ych9teT9KpUbQHeYpbnUDx9DEOUk9U8ceT_u7pJttiM",
         "name": "Alivier Zapata",
         "role": "Desarrollador Backend",
-        "recomendation": "Gabriel es un excelente desarrollador front-end, bastante capaz, y siempre veo de primera mano lo ingenioso y atento que es a la hora de trabajar y codificar.",
+        "recomendation": "Gabriel es un desarrollador front-end excelente, bastante capaz y siempre veo de primera mano lo ingenioso y atento que es a la hora de trabajar y realizar código",
         "url": "https://www.linkedin.com/in/angela-ortiz-b43420284/"
       }
     ]

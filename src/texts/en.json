@@ -6,8 +6,8 @@
     "navLinks": [
       { "href": "#home", "label": "Home" },
       { "href": "#services", "label": "Services" },
+      { "href": "#projects", "label": "Projects" },
       { "href": "#benefits", "label": "Why Me?" },
-      { "href": "#experience", "label": "Experience" },
       { "href": "#contact", "label": "Contact" }
     ]
   },
