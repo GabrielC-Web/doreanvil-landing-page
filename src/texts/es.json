@@ -59,8 +59,8 @@
     "title": "Creaciones que he hecho antes. . .",
     "projects": [
       {
-        "name": "Plantilla de comercio electrónico de ropa",
-        "description": "Un diseño de plantilla atractivo y sexy para un comercio electrónico centrado en el negocio de la ropa",
+        "name": "Ecommerce de ropa",
+        "description": "Un diseño de plantilla atractivo y hermoso para un ecommerce enfocado en la ropa.",
         "skills": [
           {
             "name": "Angular"
@@ -69,11 +69,12 @@
             "name": "Bootstrap"
           }
         ],
-        "id": "1"
+        "id": 1,
+        "url": "https://gabrielc-web.github.io/clothes-store-template/"
       },
       {
-        "name": "Plantilla de comercio electrónico de ropa",
-        "description": "Un diseño de plantilla atractivo y sexy para un comercio electrónico centrado en el negocio de la ropa",
+        "name": "Ecommerce de maquillaje",
+        "description": "Un diseño de plantilla atractivo y hermoso para un ecommerce enfocado en el maquillaje.",
         "skills": [
           {
             "name": "Angular"
@@ -82,11 +83,12 @@
             "name": "Bootstrap"
           }
         ],
-        "id": "2"
+        "id": 2,
+        "url": "https://gabrielc-web.github.io/makeup-store-template/home"
       },
       {
-        "name": "Plantilla de comercio electrónico de ropa",
-        "description": "Un diseño de plantilla atractivo y sexy para un comercio electrónico centrado en el negocio de la ropa",
+        "name": "Ecommerce de libros",
+        "description": "Un diseño de plantilla atractivo y hermoso para un ecommerce enfocado en los libros.",
         "skills": [
           {
             "name": "Angular"
@@ -95,11 +97,12 @@
             "name": "Bootstrap"
           }
         ],
-        "id": "3"
+        "id": 3,
+        "url": "https://gabrielc-web.github.io/books-store-template/home"
       },
       {
-        "name": "Plantilla de comercio electrónico de ropa",
-        "description": "Un diseño de plantilla atractivo y sexy para un comercio electrónico centrado en el negocio de la ropa",
+        "name": "Galería de imágenes infinita",
+        "description": "Una galería con innumerables imágenes, impulsada por las APIs de Pexels.",
         "skills": [
           {
             "name": "Angular"
@@ -108,7 +111,8 @@
             "name": "Bootstrap"
           }
         ],
-        "id": "4"
+        "id": 4,
+        "url": "https://next-image-gallery-zdu8.vercel.app/main"
       }
     ]
   },

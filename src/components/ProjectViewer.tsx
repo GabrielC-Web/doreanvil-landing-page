@@ -11,7 +11,23 @@ import {
   typescriptIcon,
 } from "@/assets/icons";
 
-export default function ProjectViewer({ project }: { project: any }) {
+export default function ProjectViewer({
+  project,
+}: {
+  project: {
+    name: string;
+    description: string;
+    img: {
+      mobile: any;
+      desktop: any;
+    };
+    id: number;
+    skills: {
+      name: string;
+    }[];
+    url: string;
+  };
+}) {
   const skillIcons: {
     img?: any;
     name: string;
@@ -99,21 +115,27 @@ export default function ProjectViewer({ project }: { project: any }) {
 
         {/* Description */}
         <div className="project-description">
+          {/* skills used */}
+          <div className="w-full h-6 flex justify-between items-center gap-2 ">
+            <div className="flex gap-2">
+              {project.skills.map((skill: { name: string }) => (
+                <div className="flex items-center gap-1">
+                  <img
+                    src={
+                      skillIcons.find((icon) => icon.name == skill.name)?.img
+                    }
+                    alt={skill.name}
+                    className="size-6"
+                  />
+                </div>
+              ))}
+            </div>
+            <a href={project.url} target="_black" className="text-d-violet">
+              Visit
+            </a>
+          </div>
           <h3 className="text-center">{project.name}</h3>
           <p className="text-center">{project.description}</p>
-
-          {/* skills used */}
-          <div className="w-full h-6 flex items-center gap-2 ">
-            {project.skills.map((skill: { name: string }) => (
-              <div className="flex items-center gap-1">
-                <img
-                  src={skillIcons.find((icon) => icon.name == skill.name)?.img}
-                  alt={skill.name}
-                  className="size-6"
-                />
-              </div>
-            ))}
-          </div>
         </div>
       </figure>
     </div>
@@ -140,7 +162,7 @@ export default function ProjectViewer({ project }: { project: any }) {
             {/* Opened */}
             {descriptionOpened && (
               <div className="description-opened transition-all duration-300">
-                <div className="p-3">
+                <div className="p-3 flex flex-col items-center">
                   {/* skills used */}
                   <div className="w-full h-6 flex items-center gap-2 px-3">
                     {project.skills.map((skill: { name: string }) => (
@@ -157,9 +179,9 @@ export default function ProjectViewer({ project }: { project: any }) {
                     ))}
                   </div>
                   <h5 className="text-center p-3">{project.name}</h5>
-                  <p className="p-3">{project.description}</p>
+                  <p className="p-3 !text-left">{project.description}</p>
                 </div>
-                <a href="" className="text-d-violet">
+                <a href={project.url} target="_black" className="text-d-violet">
                   Visit
                 </a>
                 <div

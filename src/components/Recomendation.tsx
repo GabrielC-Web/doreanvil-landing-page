@@ -18,8 +18,6 @@ export default function Recomendation({
   const [showExpandButton, setShowExpandButton] = useState(false);
 
   const handleShowButton = () => {
-    console.log(recomendationText.current?.offsetHeight, recomendation.name);
-
     if (
       recomendationText.current &&
       recomendationText.current?.offsetHeight > 96
@@ -41,8 +39,6 @@ export default function Recomendation({
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  console.log(showExpandButton, recomendation.name);
 
   return (
     <div

@@ -52,6 +52,7 @@ export interface ProjectItemModel {
   skills: {
     name: string;
   };
+  url: string;
 }
 
 export interface BenefitsModel {

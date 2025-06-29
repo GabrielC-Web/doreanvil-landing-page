@@ -82,6 +82,7 @@ export default function ProjectsSection({
         img: projectImages.find((img) => img.id == project.id)?.img,
         id: project.id,
         skills: project.skills,
+        url: project.url,
       };
     }
   );
