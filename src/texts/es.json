@@ -12,38 +12,122 @@
     ]
   },
   "hero": {
-    "title": "Yo craftearé\n tu website",
-    "subtitle": "Un Portafolio por Gabriel Carreño",
+    "title": "Crearé\ntu sitio web",
+    "subtitle": "Un portafolio de Gabriel Carreño",
     "description": "Construyo aplicaciones web y móviles de alto rendimiento, escalables y fáciles de usar que resuelven problemas del mundo real y deleitan a los usuarios.",
-    "ctaButton": "Construyamos Juntos"
-  },
-  "projects": {
-    "title": "Soluciones confiables para instituciones financieras líderes",
-    "clients": [
-      "Banco Principal UNO",
-      "Grupo Financiero Principal",
-      "Banco Líder DOS",
-      "Compañía Bancaria Nacional"
-    ]
+    "ctaButton": "Hagamos realidad tus ideas"
   },
   "services": {
-    "title": "Con una gran variedad de opciones para ti. . ."
+    "title": "Con una amplia selección de opciones para ti. . .",
+    "services": [
+      {
+        "name": "Angular",
+        "id": "1"
+      },
+      {
+        "name": "React",
+        "id": "2"
+      },
+      {
+        "name": "Flutter",
+        "id": "3"
+      },
+      {
+        "name": "Kotlin",
+        "id": "4"
+      },
+      {
+        "name": "Tailwind",
+        "id": "5"
+      },
+      {
+        "name": "Bootstrap",
+        "id": "6"
+      },
+      {
+        "name": "TypeScript",
+        "id": "7"
+      },
+      {
+        "name": "JavaScript",
+        "id": "8"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Creaciones que he hecho antes. . .",
+    "projects": [
+      {
+        "name": "Plantilla de comercio electrónico de ropa",
+        "description": "Un diseño de plantilla atractivo y sexy para un comercio electrónico centrado en el negocio de la ropa",
+        "id": "1"
+      },
+      {
+        "name": "Plantilla de comercio electrónico de ropa",
+        "description": "Un diseño de plantilla atractivo y sexy para un comercio electrónico centrado en el negocio de la ropa",
+        "id": "2"
+      },
+      {
+        "name": "Plantilla de comercio electrónico de ropa",
+        "description": "Un diseño de plantilla atractivo y sexy para un comercio electrónico centrado en el negocio de la ropa",
+        "id": "3"
+      },
+      {
+        "name": "Plantilla de comercio electrónico de ropa",
+        "description": "Un diseño de plantilla atractivo y sexy para un comercio electrónico centrado en el negocio de la ropa",
+        "id": "4"
+      }
+    ]
   },
   "benefits": {
-    "title": "¿Por Qué Trabajar Conmigo?",
-    "subtitle": "Entrego resultados tangibles, no solo código.",
+    "title": "¿Qué beneficios te ofrezco?",
     "list": [
       {
-        "title": "Escalable y de Alto Rendimiento",
-        "description": "Construyendo aplicaciones robustas capaces de manejar alto tráfico, como pasarelas de pago con más de 20,000 transacciones diarias."
+        "title": "Escalabilidad",
+        "id": 1
       },
       {
-        "title": "Código Eficiente y Moderno",
-        "description": "Aprovechando librerías de componentes reutilizables y arquitectura moderna para reducir el tiempo de mantenimiento y garantizar la consistencia."
+        "title": "Eficiencia",
+        "id": 2
       },
       {
-        "title": "Centrado en el Usuario y Confiable",
-        "description": "Colaborando estrechamente con equipos de UI/UX para crear interfaces intuitivas y sistemas confiables utilizados por bancos líderes."
+        "title": "Fácil de usar",
+        "id": 3
+      },
+      {
+        "title": "Soluciones robustas",
+        "id": 4
+      },
+      {
+        "title": "Sitio web notable",
+        "id": 5
+      },
+      {
+        "title": "Código mantenible y reutilizable",
+        "id": 6
+      },
+      {
+        "title": "Desarrollo ágil",
+        "id": 7
+      }
+    ]
+  },
+  "recomendations": {
+    "title": "Lo que algunas personas tienen que decir. . .",
+    "list": [
+      {
+        "image": "https://media.licdn.com/dms/image/v2/D4E35AQFb9XwG702xcg/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1738011340925?e=1751673600&v=beta&t=-rM0dEDZvdXDxyjDbbmtfQgVCXRJyB-8mx6OaMu2efg",
+        "name": "Angela Ortiz",
+        "role": "Diseñadora Gráfica",
+        "recomendation": "Gabriel Carreño, un excepcional desarrollador Front-end con quien tuve el privilegio de colaborar durante dos años en el proyecto Chinchin. \n \n Gabriel es un profesional extremadamente decidido y organizado, siempre dispuesto a enfrentar desafíos y encontrar soluciones efectivas. Su capacidad para comunicarse de forma clara y concisa es un activo invaluable, facilitando enormemente la colaboración y el entendimiento mutuo en proyectos complejos. \n \n Su experiencia y profundo conocimiento en el desarrollo Front-end es evidente en la calidad de su trabajo. Recomiendo a Gabriel sin dudarlo a cualquier empresa o equipo que busque un profesional dedicado, talentoso y con grandes habilidades para resolver problemas.",
+        "url": "https://www.linkedin.com/in/angela-ortiz-b43420284/"
+      },
+      {
+        "image": "https://media.licdn.com/dms/image/v2/D4E35AQErEUt5figUCg/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1651713834357?e=1751673600&v=beta&t=ych9teT9KpUbQHeYpbnUDx9DEOUk9U8ceT_u7pJttiM",
+        "name": "Alivier Zapata",
+        "role": "Desarrollador Backend",
+        "recomendation": "Gabriel es un excelente desarrollador front-end, bastante capaz, y siempre veo de primera mano lo ingenioso y atento que es a la hora de trabajar y codificar.",
+        "url": "https://www.linkedin.com/in/angela-ortiz-b43420284/"
       }
     ]
   },
@@ -52,18 +136,20 @@
     "job": {
       "title": "Desarrollador Frontend",
       "company": "Soluciones financieras chinchin",
-      "period": "2022 – Actualidad",
+      "period": "2022 – Presente",
       "achievements": [
-        "Jugué un papel clave en una pasarela de pagos que procesa más de <strong>20,000 transacciones diarias</strong>.",
-        "Desarrollé el 80% del frontend para un sistema de onboarding de usuarios utilizado por <strong>4 bancos líderes en Venezuela</strong>.",
-        "Diseñé una librería de componentes completa en Angular con más de <strong>50 componentes reutilizables</strong>.",
-        "Modernicé la arquitectura del código, reduciendo el mantenimiento mensual en <strong>50 horas</strong>."
+        "Desempeñó un papel clave en una pasarela de pago que procesa más de <strong>20,000 transacciones diarias</strong>.",
+        "Desarrolló el 80% del frontend para un sistema de incorporación de usuarios utilizado por <strong>4 bancos venezolanos líderes</strong>.",
+        "Diseñó una biblioteca Angular completa con más de <strong>50 componentes reutilizables</strong>.",
+        "Modernizó la arquitectura del código, reduciendo el mantenimiento mensual en <strong>50 horas</strong>."
       ]
     }
   },
   "contact": {
-    "title": "¿Listo para construir algo increíble?",
-    "description": "¡Conectemos! Estoy listo para ayudarte a alcanzar tus metas. Contáctame para una consulta o simplemente para saludar.",
-    "footer": "© {year} Doreanvil. Creado por Gabriel Carreño. Todos los derechos reservados."
+    "title": "Aquí es donde puedes encontrarme",
+    "description": "¡Conectemos! Estoy listo para ayudarte a alcanzar tus metas. Contáctame y empieza a hacer realidad tus aplicaciones.",
+    "mail": "gabrieljose.cz21@gmail.com",
+    "phone": "(+58) 412-024-4649",
+    "footer": "Construido por Gabriel Carreño. Todos los derechos reservados."
   }
 }
