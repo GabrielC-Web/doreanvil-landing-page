@@ -3,12 +3,18 @@ import { useRef } from "react";
 import { AnimatedChar } from "./AnimatedChar";
 import "../styles/projects.css";
 import ProjectViewer from "./ProjectViewer";
-import destokImgClothing from "../assets/projects/desktop_clothing_ecommerce.png";
-import mobileImgClothing from "../assets/projects/mobile_clothes_ecommerce.png";
-import desktopImgmakeup from "../assets/projects/desktop_makeup_ecommerce.png";
-import mobileImgmakeup from "../assets/projects/mobile_makeup_ecommerce.png";
 //! Optimize images
 import { ProjectItemModel, ProjectsModel } from "@/models/texts.model";
+import {
+  desktopBooksEcommerce,
+  desktopClothingEcommerce,
+  desktopGallery,
+  desktopMakeupEcommerce,
+  mobileBooksEcommerce,
+  mobileClothesEcommerce,
+  mobileGallery,
+  mobileMakeupEcommerce,
+} from "@/assets/projects/images";
 
 export default function ProjectsSection({
   projects,
@@ -43,29 +49,29 @@ export default function ProjectsSection({
   const projectImages = [
     {
       img: {
-        mobile: mobileImgClothing,
-        desktop: destokImgClothing,
+        mobile: mobileClothesEcommerce,
+        desktop: desktopClothingEcommerce,
       },
       id: 1,
     },
     {
       img: {
-        mobile: mobileImgmakeup,
-        desktop: desktopImgmakeup,
+        mobile: mobileMakeupEcommerce,
+        desktop: desktopMakeupEcommerce,
       },
       id: 2,
     },
     {
       img: {
-        mobile: mobileImgClothing,
-        desktop: destokImgClothing,
+        mobile: mobileBooksEcommerce,
+        desktop: desktopBooksEcommerce,
       },
       id: 3,
     },
     {
       img: {
-        mobile: mobileImgClothing,
-        desktop: destokImgClothing,
+        mobile: mobileGallery,
+        desktop: desktopGallery,
       },
       id: 4,
     },
