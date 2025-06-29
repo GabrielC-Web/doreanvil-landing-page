@@ -124,24 +124,20 @@
         "id": 2
       },
       {
-        "title": "Fácil de usar",
+        "title": "Foco en UX/UI",
         "id": 3
       },
       {
-        "title": "Soluciones robustas",
+        "title": "Código robusto",
         "id": 4
       },
       {
-        "title": "Sitio web notable",
+        "title": "Reusabilidad",
         "id": 5
       },
       {
-        "title": "Código mantenible y reutilizable",
+        "title": "Mantenibilidad",
         "id": 6
-      },
-      {
-        "title": "Desarrollo ágil",
-        "id": 7
       }
     ]
   },

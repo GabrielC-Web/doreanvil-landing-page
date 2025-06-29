@@ -1,5 +1,12 @@
 import { BenefitsModel } from "@/models/texts.model";
-import { Scaling, Sparkles } from "lucide-react";
+import {
+  Handshake,
+  Scaling,
+  Settings,
+  Shield,
+  Sparkles,
+  Wrench,
+} from "lucide-react";
 import "../styles/benefits.css";
 import { AnimatedChar } from "./AnimatedChar";
 
@@ -17,31 +24,31 @@ export default function BenefitsSection({
     id: number;
   }[] = [
     {
-      icon: <Scaling className="w-10 h-10 mb-4 text-[#9a6aff]" />,
+      icon: <Scaling className="w-10 h-10  text-d-blue" />,
       id: 1,
     },
     {
-      icon: <Sparkles className="w-10 h-10 mb-4 text-d-yellow" />,
+      icon: <Sparkles className="w-10 h-10  text-d-yellow" />,
       id: 2,
     },
     {
-      icon: <Sparkles className="w-10 h-10 mb-4 text-d-yellow" />,
+      icon: <Handshake className="w-10 h-10  text-d-green" />,
       id: 3,
     },
     {
-      icon: <Sparkles className="w-10 h-10 mb-4 text-d-yellow" />,
+      icon: <Shield className="w-10 h-10  text-d-green" />,
       id: 4,
     },
     {
-      icon: <Sparkles className="w-10 h-10 mb-4 text-d-yellow" />,
+      icon: <Settings className="w-10 h-10  text-d-blue" />,
       id: 5,
     },
     {
-      icon: <Sparkles className="w-10 h-10 mb-4 text-d-yellow" />,
+      icon: <Wrench className="w-10 h-10  text-d-blue" />,
       id: 6,
     },
     {
-      icon: <Sparkles className="w-10 h-10 mb-4 text-d-yellow" />,
+      icon: <Sparkles className="w-10 h-10  text-d-yellow" />,
       id: 7,
     },
   ];
@@ -57,7 +64,7 @@ export default function BenefitsSection({
 
   return (
     <section id="benefits" className="w-full min-h-svh pt-20">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto">
         <div className="text-center mb-16">
           <div className="h2-container">
             {/* Title */}

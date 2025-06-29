@@ -124,24 +124,20 @@
         "id": 2
       },
       {
-        "title": "User-friendly",
+        "title": "UX/UI focused",
         "id": 3
       },
       {
-        "title": "Robusts solutions",
+        "title": "Robust code",
         "id": 4
       },
       {
-        "title": "Remarkable website",
+        "title": "Reusability",
         "id": 5
       },
       {
-        "title": "Mantainable and reusable code",
+        "title": "Maintainability",
         "id": 6
-      },
-      {
-        "title": "Agile development",
-        "id": 7
       }
     ]
   },

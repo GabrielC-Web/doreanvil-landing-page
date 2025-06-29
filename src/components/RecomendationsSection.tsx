@@ -11,7 +11,7 @@ export default function RecomendationsSection({
 
   return (
     <div id="recomendations" className="h-fit min-h-svh pt-20">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto">
         {/* Title */}
         <div className="h2-container">
           {title.map((el: string, i: number) => (

@@ -7,7 +7,7 @@ export default function Footer({ contact }: { contact: ContactModel }) {
 
   return (
     <footer id="contact" className="h-[85svh] w-full text-white p-0 mt-20">
-      <div className="container h-full w-full flex flex-col justify-between items-center mx-auto px-6 text-center">
+      <div className="container h-full w-full flex flex-col justify-between items-center mx-auto text-center">
         {/* Title */}
         <div className="h2-container">
           {title.map((el: string, i: number) => (
