@@ -10,6 +10,8 @@ export default function Recomendation({
     role: string;
     image: string;
     url: string;
+    seeMoreButtonText: string;
+    seeLessButtonText: string;
   };
 }) {
   const recomendationText = useRef<HTMLParagraphElement | null>(null);
@@ -80,7 +82,9 @@ export default function Recomendation({
               setTextExpanded((expanded) => (expanded = !expanded));
             }}
           >
-            {textExpanded ? "See less" : "See more..."}
+            {textExpanded
+              ? recomendation.seeLessButtonText
+              : recomendation.seeMoreButtonText}
           </button>
         </div>
       ) : null}

@@ -89,6 +89,9 @@ export default function ProjectsSection({
         id: project.id,
         skills: project.skills,
         url: project.url,
+        visitButtonText: projects.visitButtonText,
+        openButtonText: projects.openButtonText,
+        closeButtonText: projects.closeButtonText,
       };
     }
   );

@@ -27,6 +27,9 @@ export default function ProjectViewer({
       name: string;
     }[];
     url: string;
+    visitButtonText: string;
+    openButtonText: string;
+    closeButtonText: string;
   };
 }) {
   const skillIcons: {
@@ -136,7 +139,7 @@ export default function ProjectViewer({
               ))}
             </div>
             <a href={project.url} target="_black" className="text-d-violet">
-              Visit
+              {project.visitButtonText}
             </a>
           </div>
           <h3 className="text-center">{project.name}</h3>
@@ -187,7 +190,7 @@ export default function ProjectViewer({
                   <p className="p-3 !text-left">{project.description}</p>
                 </div>
                 <a href={project.url} target="_black" className="text-d-violet">
-                  Visit
+                  {project.visitButtonText}
                 </a>
                 <div
                   className="w-full h-12 flex items-center gap-3 p-3 cursor-pointer text-d-blue"
@@ -196,7 +199,7 @@ export default function ProjectViewer({
                   }}
                 >
                   <ChevronLeft className="hover:translate-x-3"></ChevronLeft>
-                  <span>Close</span>
+                  <span>{project.closeButtonText}</span>
                 </div>
               </div>
             )}
@@ -213,7 +216,7 @@ export default function ProjectViewer({
                   }}
                 >
                   <div className="text-d-blue flex items-center gap-3 cursor-pointer">
-                    <span className="">Open</span>
+                    <span className="">{project.openButtonText}</span>
                     <ChevronRight className=" hover:translate-x-3"></ChevronRight>
                   </div>
                 </div>

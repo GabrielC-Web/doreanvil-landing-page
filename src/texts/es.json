@@ -128,7 +128,10 @@
         "id": 4,
         "url": "https://next-image-gallery-zdu8.vercel.app/main"
       }
-    ]
+    ],
+    "visitButtonText": "Visitar",
+    "openButtonText": "Abre",
+    "closeButtonText": "Cierra"
   },
   "benefits": {
     "title": "¿Qué beneficios te ofrezco?",
@@ -176,7 +179,9 @@
         "recomendation": "Gabriel es un desarrollador front-end excelente, bastante capaz y siempre veo de primera mano lo ingenioso y atento que es a la hora de trabajar y realizar código",
         "url": "https://www.linkedin.com/in/angela-ortiz-b43420284/"
       }
-    ]
+    ],
+    "seeMoreButtonText": "Ver más. . .",
+    "seeLessButtonText": "Ver menos. . ."
   },
   "experience": {
     "title": "Mi Trayectoria Profesional",

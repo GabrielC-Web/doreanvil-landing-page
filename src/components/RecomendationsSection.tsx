@@ -1,4 +1,7 @@
-import { RecomendationsModel } from "@/models/texts.model";
+import {
+  RecomendationItemModel,
+  RecomendationsModel,
+} from "@/models/texts.model";
 import { AnimatedChar } from "./AnimatedChar";
 import Recomendation from "./Recomendation";
 
@@ -8,6 +11,11 @@ export default function RecomendationsSection({
   recomendations: RecomendationsModel;
 }) {
   const title = recomendations.title.split(" ");
+
+  recomendations.list.forEach((recomendation: RecomendationItemModel) => {
+    recomendation.seeLessButtonText = recomendations.seeLessButtonText;
+    recomendation.seeMoreButtonText = recomendations.seeMoreButtonText;
+  });
 
   return (
     <div id="recomendations" className="h-fit min-h-svh pt-20">

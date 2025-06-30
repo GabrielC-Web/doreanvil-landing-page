@@ -43,6 +43,9 @@ export interface ServiceModel {
 export interface ProjectsModel {
   title: string;
   projects: ProjectItemModel[];
+  visitButtonText: string;
+  openButtonText: string;
+  closeButtonText: string;
 }
 
 export interface ProjectItemModel {
@@ -68,6 +71,8 @@ export interface BenefitItemModel {
 export interface RecomendationsModel {
   title: string;
   list: RecomendationItemModel[];
+  seeMoreButtonText: string;
+  seeLessButtonText: string;
 }
 
 export interface RecomendationItemModel {
@@ -76,6 +81,8 @@ export interface RecomendationItemModel {
   role: string;
   recomendation: string;
   url: string;
+  seeMoreButtonText: string;
+  seeLessButtonText: string;
 }
 
 export interface ExperienceModel {
