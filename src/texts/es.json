@@ -5,7 +5,7 @@
   "header": {
     "navLinks": [
       { "href": "#home", "label": "Inicio" },
-      { "href": "#about", "label": "Quién soy yo?" },
+      { "href": "#about", "label": "¿Quién soy yo?" },
       { "href": "#services", "label": "Servicios" },
       { "href": "#projects", "label": "Proyectos" },
       { "href": "#benefits", "label": "Beneficios" },
