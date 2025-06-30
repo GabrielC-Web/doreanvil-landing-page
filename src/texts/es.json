@@ -5,6 +5,7 @@
   "header": {
     "navLinks": [
       { "href": "#home", "label": "Inicio" },
+      { "href": "#about", "label": "Quién soy yo?" },
       { "href": "#services", "label": "Servicios" },
       { "href": "#projects", "label": "Proyectos" },
       { "href": "#benefits", "label": "Beneficios" },
@@ -17,6 +18,16 @@
     "subtitle": "Un portafolio de Gabriel Carreño",
     "description": "Construyo aplicaciones web y móviles de alto rendimiento, escalables y fáciles de usar que resuelven problemas del mundo real y deleitan a los usuarios.",
     "ctaButton": "Hagamos realidad tus ideas"
+  },
+  "about": {
+    "title": "Pero primero ¿Quién soy yo?",
+    "name": "Gabriel Carreño",
+    "role": "Frontend Developer",
+    "buttonText": "Descargar CV",
+    "img": "",
+    "description": "Soy Gabriel Carreño, y sí, el sitio web dice 'Doreanvil' ¿Pero mi nombre es Gabriel? Sí, así es, porque ese es mi seudónimo para la web. \n\nSoy de Venezuela y tengo 3 años de experiencia trabajando como desarrollador frontend. Puedo decir con total confianza que he trabajado en el desarrollo de aplicaciones de alto rendimiento basadas en Angular, incluida una pasarela de pagos que maneja miles de transacciones diarias y un sistema de registro de usuarios utilizado por los principales bancos de mi país. \n\nMe especializo en la creación de componentes reutilizables y escalables, y en colaborar con equipos de diseño y backend para ofrecer experiencias de usuario perfectas.\n\nEntonces, estoy completamente seguro de que puedo crear tu aplicación o sitio web, de hecho, vengo...",
+    "cv": "ES",
+    "cvName": "CV GABRIEL CARREÑO (ES).pdf"
   },
   "services": {
     "title": "Con una amplia selección de opciones para ti. . .",

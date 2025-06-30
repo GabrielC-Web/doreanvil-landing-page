@@ -99,3 +99,14 @@ export interface ContactModel {
   linkedin: string;
   github: string;
 }
+
+export interface AboutModel {
+  title: string;
+  img: string;
+  name: string;
+  role: string;
+  description: string;
+  buttonText: string;
+  cv: string;
+  cvName: string;
+}

@@ -12,6 +12,7 @@ import enContent from "./texts/en.json";
 import esContent from "./texts/es.json";
 import RecomendationsSection from "./components/RecomendationsSection";
 import {
+  AboutModel,
   BenefitsModel,
   BrandModel,
   ContactModel,
@@ -22,6 +23,7 @@ import {
   RecomendationsModel,
   ServicesModel,
 } from "./models/texts.model";
+import AboutMe from "./components/AboutMe";
 
 // A simple content object to hold both languages
 // eslint-disable-next-line react-refresh/only-export-components
@@ -38,6 +40,7 @@ export default function App() {
     brand: BrandModel;
     header: HeaderModel;
     hero: HeroModel;
+    about: AboutModel;
     services: ServicesModel;
     projects: ProjectsModel;
     benefits: BenefitsModel;
@@ -58,6 +61,9 @@ export default function App() {
       <main className="px-3">
         {/* Hero Section */}
         <HeroSection hero={text.hero}></HeroSection>
+
+        {/* About me Section */}
+        <AboutMe about={text.about}></AboutMe>
 
         {/* Services Section */}
         <ServicesSection services={text.services}></ServicesSection>
