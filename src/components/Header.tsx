@@ -1,5 +1,5 @@
 import { HeaderModel } from "@/models/texts.model";
-import { Menu, X } from "lucide-react";
+import { Anvil, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 // Custom Anvil Icon Component
@@ -38,7 +38,7 @@ export default function Header(props: {
       <div className="w-full px-3 py-4 flex justify-between items-center">
         {/* Logo */}
         <a href="#home" className="flex items-center space-x-2">
-          <AnvilIcon className="h-8 w-8 text-orange-700" />
+          <Anvil className="size-8 text-orange-700" />
           <span className="font-bold text-white">Doreanvil</span>
         </a>
 
