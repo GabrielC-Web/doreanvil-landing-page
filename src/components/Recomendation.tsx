@@ -56,7 +56,9 @@ export default function Recomendation({
           alt=""
         />
         <div className="flex flex-col items-start">
-          <span className="text-white">{recomendation.name}</span>
+          <a href={recomendation.url} target="_blank">
+            <span className="text-d-violet">{recomendation.name}</span>
+          </a>
           <span className="text-white">{recomendation.role}</span>
         </div>
       </div>
@@ -66,7 +68,6 @@ export default function Recomendation({
       >
         {recomendation.recomendation}
       </p>
-      <a href={recomendation.url}></a>
 
       {/* Botón de ver más */}
       {showExpandButton ? (
