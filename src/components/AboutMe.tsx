@@ -40,14 +40,18 @@ export default function AboutMe({ about }: { about: AboutModel }) {
           />
           <h3 className="text-center">{about.name}</h3>
           <span className="text-d-blue">{about.role}</span>
+
+          {/* Boton de descargar */}
           <button
-            className="themed-button !text-2xl !p-3"
+            className="themed-button !text-2xl !p-3 my-5"
             onClick={() => {
               downloadCV();
             }}
           >
             {about.buttonText}
           </button>
+
+          {/* Gran descripción */}
           <p className="!text-left whitespace-pre-wrap max-w-xl">
             {about.description}
           </p>

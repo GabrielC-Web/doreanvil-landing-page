@@ -55,14 +55,14 @@ export default function Recomendation({
           className="size-14 rounded-full"
           alt=""
         />
-        <div className="flex flex-col">
+        <div className="flex flex-col items-start">
           <span className="text-white">{recomendation.name}</span>
           <span className="text-white">{recomendation.role}</span>
         </div>
       </div>
       <p
         ref={recomendationText}
-        className="!text-left whitespace-pre-line truncate"
+        className="!text-left whitespace-pre-line truncate pt-2"
       >
         {recomendation.recomendation}
       </p>

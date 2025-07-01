@@ -41,7 +41,7 @@
 /* Detalle de proyecto */
 
 .project-description {
-  @apply w-full max-w-[500px] border-2 border-orange-700 absolute z-10 left-0 self-end p-3 flex justify-center flex-col items-center;
+  @apply w-full max-w-[500px] border-2 border-orange-700 absolute z-10 left-0 self-end p-3 gap-3 flex justify-center flex-col items-center;
   background: rgba(0, 0, 0, 0.9);
   transform: translate(-50px, 48px);
 }

@@ -123,8 +123,10 @@ export default function ProjectViewer({
 
         {/* Description */}
         <div className="project-description">
+          <h3 className="text-center">{project.name}</h3>
+          <p className="text-center">{project.description}</p>
           {/* skills used */}
-          <div className="w-full h-6 flex justify-between items-center gap-2 ">
+          <div className="w-full h-6 flex justify-between items-center gap-2 pt-3">
             <div className="flex gap-2">
               {project.skills.map((skill: { name: string }, i) => (
                 <div key={i} className="flex items-center gap-1">
@@ -141,9 +143,8 @@ export default function ProjectViewer({
             <a href={project.url} target="_black" className="text-d-violet">
               {project.visitButtonText}
             </a>
+            <div className="w-12"></div>
           </div>
-          <h3 className="text-center">{project.name}</h3>
-          <p className="text-center">{project.description}</p>
         </div>
       </figure>
     </div>
