@@ -2,30 +2,6 @@ import { HeaderModel } from "@/models/texts.model";
 import { Anvil, Menu, X } from "lucide-react";
 import { useState } from "react";
 
-// Custom Anvil Icon Component
-type AnvilIconProps = {
-  className?: string;
-};
-
-const AnvilIcon = ({ className }: AnvilIconProps) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className}
-  >
-    <path d="M7 10l3.43 3.43A1 1 0 0 0 11.12 14H18a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-1a1 1 0 0 0-1 1v1" />
-    <path d="M3 14a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3" />
-    <path d="M12 20v2" />
-    <path d="M6 20v2" />
-    <path d="M18 20v2" />
-  </svg>
-);
-
 export default function Header(props: {
   onLanguagueSwitch: (e: any) => void;
   header: HeaderModel;
