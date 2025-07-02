@@ -81,7 +81,7 @@
           }
         ],
         "id": 1,
-        "url": "https://gabrielc-web.github.io/clothes-store-template/"
+        "url": "https://clothes-store-template.vercel.app/home"
       },
       {
         "name": "Ecommerce de maquillaje",
@@ -95,7 +95,7 @@
           }
         ],
         "id": 2,
-        "url": "https://gabrielc-web.github.io/makeup-store-template/home"
+        "url": "https://makeup-store-template.vercel.app/home"
       },
       {
         "name": "Ecommerce de libros",
@@ -109,7 +109,7 @@
           }
         ],
         "id": 3,
-        "url": "https://gabrielc-web.github.io/books-store-template/home"
+        "url": "https://books-store-template.vercel.app/home"
       },
       {
         "name": "Galería de imágenes infinita",
