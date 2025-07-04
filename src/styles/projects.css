@@ -62,3 +62,14 @@
   @apply transform rotate-90 absolute top-0 right-0 border-l-2 border-orange-700 h-12 p-3;
   transform: translate(25px, -28px);
 }
+
+/* ? Alternative */
+
+#scroll_h_container::-webkit-scrollbar {
+  @apply size-2 bg-black rounded-none border-2 border-orange-700;
+}
+
+/* The draggable scrolling handle */
+#scroll_h_container::-webkit-scrollbar-thumb {
+  @apply bg-orange-700 rounded-none border-2 cursor-pointer border-orange-700;
+}

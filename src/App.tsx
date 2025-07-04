@@ -4,12 +4,11 @@ import BenefitsSection from "./components/BenefitsSection";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
-import ProjectsSection from "./components/ProjectsSection";
 import ServicesSection from "./components/ServicesSection";
 
 // Import the language files
-import enContent from "./texts/en.json";
-import esContent from "./texts/es.json";
+import AboutMe from "./components/AboutMe";
+import ProjectsSectionAlternative from "./components/ProjectsSectionAlternative";
 import RecomendationsSection from "./components/RecomendationsSection";
 import {
   AboutModel,
@@ -23,7 +22,8 @@ import {
   RecomendationsModel,
   ServicesModel,
 } from "./models/texts.model";
-import AboutMe from "./components/AboutMe";
+import enContent from "./texts/en.json";
+import esContent from "./texts/es.json";
 
 // A simple content object to hold both languages
 // eslint-disable-next-line react-refresh/only-export-components
@@ -69,7 +69,10 @@ export default function App() {
         <ServicesSection services={text.services}></ServicesSection>
 
         {/* Client (Projects) projects Section */}
-        <ProjectsSection projects={text.projects}></ProjectsSection>
+        {/* <ProjectsSection projects={text.projects}></ProjectsSection> */}
+        <ProjectsSectionAlternative
+          projects={text.projects}
+        ></ProjectsSectionAlternative>
 
         {/* Benefits Section */}
         <BenefitsSection benefits={text.benefits}></BenefitsSection>

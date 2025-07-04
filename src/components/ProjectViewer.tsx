@@ -98,7 +98,7 @@ export default function ProjectViewer({
   }, []);
 
   return windowSize.width >= 1024 ? (
-    <div className="relative max-w-[85%] xl:max-w-4xl max-h-[70%] xl:max-h-[500px] w-full h-full border-2 border-orange-700">
+    <div className="relative max-w-[70%] xl:max-w-4xl max-h-[60%] xl:max-h-[500px] w-full h-full border-2 border-orange-700">
       {/* En tamaño de escritorio */}
       <figure
         className={
