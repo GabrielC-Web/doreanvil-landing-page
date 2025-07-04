@@ -155,31 +155,34 @@ export default function ProjectsSectionAlternative({
       </div>
       <div className="h-svh relative">
         <div className="overflow-hidden">
-          {/* horizontal scroll controller */}
-          <div className="absolute w-20 h-10 right-1/2 top-full z-20 translate-x-1/2 -translate-y-[125%]  flex justify-end items-center">
-            <div
-              className={
-                "size-fit border-2 border-d-orange cursor-pointer" +
-                (scrollLeftEnded ? " opacity-50 pointer-events-none" : "")
-              }
-              onClick={() => {
-                handleHorizontalScroll("before");
-              }}
-            >
-              <ChevronLeft className="text-d-blue"></ChevronLeft>
+          {/* horizontal scroll controller (Solo en tamaños de escritorio) */}
+          {viewportWidth > 1024 && (
+            <div className="absolute w-20 h-10 right-1/2 top-full z-20 translate-x-1/2 -translate-y-[125%]  flex justify-end items-center">
+              <div
+                className={
+                  "size-fit border-2 border-d-orange cursor-pointer" +
+                  (scrollLeftEnded ? " opacity-50 pointer-events-none" : "")
+                }
+                onClick={() => {
+                  handleHorizontalScroll("before");
+                }}
+              >
+                <ChevronLeft className="text-d-blue"></ChevronLeft>
+              </div>
+              <div
+                className={
+                  "size-fit border-2 border-d-orange cursor-pointer" +
+                  (scrollRightEnded ? " opacity-50 pointer-events-none" : "")
+                }
+                onClick={() => {
+                  handleHorizontalScroll("after");
+                }}
+              >
+                <ChevronRight className="text-d-blue"></ChevronRight>
+              </div>
             </div>
-            <div
-              className={
-                "size-fit border-2 border-d-orange cursor-pointer" +
-                (scrollRightEnded ? " opacity-50 pointer-events-none" : "")
-              }
-              onClick={() => {
-                handleHorizontalScroll("after");
-              }}
-            >
-              <ChevronRight className="text-d-blue"></ChevronRight>
-            </div>
-          </div>
+          )}
+
           {/* Projects */}
           <div
             id="scroll_h_container"
