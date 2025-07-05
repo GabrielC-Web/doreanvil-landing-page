@@ -1,8 +1,8 @@
 import { AboutModel } from "@/models/texts.model";
-import { AnimatedChar } from "./AnimatedChar";
-import me from "../assets/me.jpeg";
-import cvES from "../assets/CV GABRIEL CARREÑO.pdf";
 import cvEN from "../assets/CV GABRIEL CARREÑO (ENGLISH).pdf";
+import cvES from "../assets/CV GABRIEL CARREÑO.pdf";
+import me from "../assets/me.jpeg";
+import { AnimatedChar } from "./AnimatedChar";
 
 export default function AboutMe({ about }: { about: AboutModel }) {
   const title = about.title.split(" ");

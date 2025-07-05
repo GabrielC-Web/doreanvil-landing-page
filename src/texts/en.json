@@ -167,14 +167,14 @@
     "title": "What some people have to say. . .",
     "list": [
       {
-        "image": "/src/assets/recomendations/angelita_recommend.jpg",
+        "id": 0,
         "name": "Angela Ortiz",
         "role": "Graphic Designer",
         "recomendation": "Gabriel Carreño, an exceptional Front-end developer with whom I had the privilege of collaborating for two years on the Chinchin project. \n \n Gabriel is an extremely decisive and organized professional, always willing to face challenges and find effective solutions. Your ability to communicate clearly and concisely is an invaluable asset, greatly facilitating collaboration and mutual understanding on complex projects. \n \n His experience and deep knowledge in Front-end development is evident in the quality of his work. I recommend Gabriel without hesitation to any company or team looking for a dedicated, talented professional with great problem-solving skills.",
         "url": "https://www.linkedin.com/in/angela-ortiz-b43420284/"
       },
       {
-        "image": "/src/assets/recomendations/ali_recommend.jpg",
+        "id": 1,
         "name": "Alivier Zapata",
         "role": "Backend developer",
         "recomendation": "Gabriel is an excellent front-end developer, quite capable, and I always see first-hand how resourceful and attentive he is when it comes to working and coding.",

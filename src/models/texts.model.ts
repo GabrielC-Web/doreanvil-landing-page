@@ -76,7 +76,7 @@ export interface RecomendationsModel {
 }
 
 export interface RecomendationItemModel {
-  image: string;
+  id: number;
   name: string;
   role: string;
   recomendation: string;

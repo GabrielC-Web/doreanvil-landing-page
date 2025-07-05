@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "../styles/recomendations.css";
+import { recomendationImgs } from "@/assets/recomendations/recomendations";
 
 export default function Recomendation({
   recomendation,
@@ -8,13 +9,16 @@ export default function Recomendation({
     name: string;
     recomendation: string;
     role: string;
-    image: string;
+    id: number;
     url: string;
     seeMoreButtonText: string;
     seeLessButtonText: string;
   };
 }) {
   const recomendationText = useRef<HTMLParagraphElement | null>(null);
+
+  const images = recomendationImgs;
+
   const [textExpanded, setTextExpanded] = useState(false);
 
   const [showExpandButton, setShowExpandButton] = useState(false);
@@ -52,7 +56,7 @@ export default function Recomendation({
       <div className="flex gap-3 items-center">
         <img
           loading="lazy"
-          src={recomendation.image}
+          src={images[recomendation.id]}
           className="size-14 rounded-full"
           alt=""
         />

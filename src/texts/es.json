@@ -167,14 +167,14 @@
     "title": "Lo que algunas personas tienen que decir. . .",
     "list": [
       {
-        "image": "/src/assets/recomendations/angelita_recommend.jpg",
+        "id": 0,
         "name": "Angela Ortiz",
         "role": "Diseñadora Gráfica",
         "recomendation": "Gabriel Carreño, un excepcional desarrollador Front-end con quien tuve el privilegio de colaborar durante dos años en el proyecto Chinchin.\n\n Gabriel es un profesional sumamente resolutivo y organizado, siempre dispuesto a enfrentar desafíos y encontrar soluciones efectivas. Su habilidad para comunicarse de manera clara y concisa es un activo invaluable, lo que facilita enormemente la colaboración y el entendimiento mutuo en proyectos complejos.\n\n Su experiencia y profundo conocimiento en el desarrollo Front-end son evidentes en la calidad de su trabajo. Recomiendo a Gabriel sin dudarlo a cualquier empresa o equipo que busque un profesional dedicado, talentoso y con una gran capacidad para resolver problemas.",
         "url": "https://www.linkedin.com/in/angela-ortiz-b43420284/"
       },
       {
-        "image": "/src/assets/recomendations/ali_recommend.jpg",
+        "id": 1,
         "name": "Alivier Zapata",
         "role": "Desarrollador Backend",
         "recomendation": "Gabriel es un desarrollador front-end excelente, bastante capaz y siempre veo de primera mano lo ingenioso y atento que es a la hora de trabajar y realizar código",
