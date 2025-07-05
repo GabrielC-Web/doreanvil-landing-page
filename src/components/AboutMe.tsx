@@ -33,13 +33,18 @@ export default function AboutMe({ about }: { about: AboutModel }) {
 
         {/* About me */}
         <div className="flex flex-col justify-center items-center gap-3 ">
-          <img
-            src={about.img}
-            alt="Image of Gabriel Carreño"
-            className="w-full max-w-[300px] aspect-square border-2 border-d-orange"
-          />
+          <a href={about.url} target="_blank">
+            <img
+              loading="lazy"
+              src={about.img}
+              alt="Image of Gabriel Carreño"
+              className="w-full max-w-[300px] aspect-square border-2 border-d-orange aboutme-img"
+            />
+          </a>
           <h3 className="text-center">{about.name}</h3>
-          <span className="text-d-blue">{about.role}</span>
+          <a href={about.url} target="_blank">
+            <span className="text-d-blue">{about.role}</span>
+          </a>
 
           {/* Boton de descargar */}
           <button

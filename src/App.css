@@ -191,3 +191,14 @@ img {
 .benefit-box:hover {
   box-shadow: 4px 4px 15px var(--color-orange-700);
 }
+
+/* About me */
+
+.aboutme-img {
+  box-shadow: 6px 6px 0px var(--color-orange-700);
+}
+
+.aboutme-img:active {
+  transform: translate(6px, 6px);
+  box-shadow: none;
+}

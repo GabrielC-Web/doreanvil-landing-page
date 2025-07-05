@@ -116,4 +116,5 @@ export interface AboutModel {
   buttonText: string;
   cv: string;
   cvName: string;
+  url: string;
 }

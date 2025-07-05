@@ -97,7 +97,12 @@ export default function ServicesSection({
         <div className="w-full flex flex-wrap justify-center sm:justify-start gap-6">
           {skills.map((skill: any, i: number) => (
             <div key={i} className="skill-box">
-              <img src={skill.image} className="size-20" alt="" />
+              <img
+                loading="lazy"
+                src={skill.image}
+                className="size-20"
+                alt=""
+              />
               <span className="text-white ">{skill.name}</span>
             </div>
           ))}

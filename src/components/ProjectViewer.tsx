@@ -108,6 +108,7 @@ export default function ProjectViewer({
       >
         {/* Imagen grande */}
         <img
+          loading="lazy"
           src={project.img.desktop}
           className={"w-full h-full absolute "}
           alt=""
@@ -115,6 +116,7 @@ export default function ProjectViewer({
 
         {/* Imagen pequeña */}
         <img
+          loading="lazy"
           className="h-full min-w-[244px] absolute top-12 left-full -translate-x-5/6 z-20 border-2 border-orange-700"
           style={{ boxShadow: "black -6px -6px 10px" }}
           src={project.img.mobile}
@@ -131,6 +133,7 @@ export default function ProjectViewer({
               {project.skills.map((skill: { name: string }, i) => (
                 <div key={i} className="flex items-center gap-1">
                   <img
+                    loading="lazy"
                     src={
                       skillIcons.find((icon) => icon.name == skill.name)?.img
                     }
@@ -161,6 +164,7 @@ export default function ProjectViewer({
         <div className="w-fit flex">
           {/* Imagen */}
           <img
+            loading="lazy"
             className="w-[244px] aspect-[0.48] border-2 border-orange-700"
             src={project.img.mobile}
             alt=""
@@ -177,6 +181,7 @@ export default function ProjectViewer({
                     {project.skills.map((skill: { name: string }, i) => (
                       <div key={i} className="flex items-center gap-1">
                         <img
+                          loading="lazy"
                           src={
                             skillIcons.find((icon) => icon.name == skill.name)
                               ?.img

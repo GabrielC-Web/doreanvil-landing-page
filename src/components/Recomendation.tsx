@@ -51,6 +51,7 @@ export default function Recomendation({
     >
       <div className="flex gap-3 items-center">
         <img
+          loading="lazy"
           src={recomendation.image}
           className="size-14 rounded-full"
           alt=""
