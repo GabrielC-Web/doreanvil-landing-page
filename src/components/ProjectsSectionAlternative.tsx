@@ -157,7 +157,7 @@ export default function ProjectsSectionAlternative({
         <div className="overflow-hidden">
           {/* horizontal scroll controller (Solo en tamaños de escritorio) */}
           {viewportWidth > 1024 && (
-            <div className="absolute w-20 h-10 right-1/2 top-full z-20 translate-x-1/2 -translate-y-[125%]  flex justify-end items-center">
+            <div className="absolute container mx-auto w-full h-10 right-1/2 top-1/2 z-20 translate-x-1/2 translate-y-1/4  flex justify-between items-center">
               <div
                 className={
                   "size-fit border-2 border-d-orange cursor-pointer" +
