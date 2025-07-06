@@ -34,7 +34,7 @@ export const content: any = {
 
 // Main App Component
 export default function App() {
-  const [language, setLanguage] = useState("en"); // 'en' or 'es'
+  const [language, setLanguage] = useState("es"); // 'en' or 'es'
 
   const text: {
     brand: BrandModel;
