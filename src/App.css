@@ -209,16 +209,6 @@ img {
   }
 }
 
-/* Benefits */
-
-.benefit-box {
-  @apply bg-black p-8 rounded-lg shadow-md text-center hover:shadow-xl  transition-transform duration-300 cursor-pointer text-white flex justify-between items-center;
-}
-
-.benefit-box:hover {
-  box-shadow: 4px 4px 15px var(--color-orange-700);
-}
-
 /* About me */
 
 .aboutme-img {

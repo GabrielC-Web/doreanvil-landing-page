@@ -43,7 +43,7 @@ export default function AboutMe({ about }: { about: AboutModel }) {
           </a>
           <h3 className="text-center">{about.name}</h3>
           <a href={about.url} target="_blank">
-            <span className="text-d-blue">{about.role}</span>
+            <span className="text-d-violet">{about.role}</span>
           </a>
 
           {/* Boton de descargar */}
