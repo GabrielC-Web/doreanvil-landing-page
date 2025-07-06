@@ -14,10 +14,36 @@
   --color-d-violet: #9a6aff;
   --color-d-green: #00bfa6;
 }
-.VT323 {
+@font-face {
   font-family: "VT323";
+  src: url("./assets/fonts/VT323/VT323-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+.VT323 {
+  font-family: "VT323", monospace;
 }
 
 h1 {
@@ -41,7 +67,8 @@ h5 {
 }
 
 p {
-  @apply text-white text-center text-[1rem] md:text-xl leading-4 md:leading-5;
+  @apply text-white text-center text-[1rem] md:text-xl leading-5 md:leading-6;
+  font-family: "Roboto", sans-serif !important;
 }
 
 a,
